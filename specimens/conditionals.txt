@@ -1,0 +1,13 @@
+spec code { ver = 5.3 | syn = utinax }
+
+
+set 'cond' = true
+set 'sip' = { if cond then "sup" else "code" }
+
+set cond = false
+set sip = { if cond || sip.len + ran(-2, 2) | sip.len }
+
+set cond = none
+loop({if cond > none then 20 else 2}) {
+  sys.out({if loop.count > 10 then "hmmm" else "hmm"})
+}
