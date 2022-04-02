@@ -1,0 +1,29 @@
+\ wassup
+\ supcode specimen
+
+spec code { ver = 5.3 | syn = utinax }
+
+
+on start {{
+
+  set 'state' = none
+  prompt.open()
+
+  loop until state != none {
+    prompt.out("wassup?")
+    prompt.in('res')
+
+    if res = "doing good" {
+      set state = true
+    elif res = "nothin much" |
+      set state = false
+    }
+  }
+
+  if state {
+    prompt.out("cool")
+  else |
+    prompt.out("sounds good")
+  }
+
+}}
