@@ -1,0 +1,18 @@
+spec code { ver = 5.3 | syn = utinax }
+
+
+activate datix
+sys.out(datix.now())
+
+activate sensyx in datix
+if sensyx.timezone() = datix.timezone(utc) {
+  print(sensyx.timezone().now())
+}
+
+prime datix
+sys.out(now())
+
+prime sensyx in datix
+if timezone() = timezone(utc) {
+  print(timezone().now())
+}
