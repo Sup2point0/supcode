@@ -1,3 +1,5 @@
+All will be updated in time.
+
 ## Introduction
 
 Supcode is a general-purpose text-based programming language created by Sup#2.0 under 2.0 Studios. It is largely based on Scratch, Python and Wikitext, and itself is programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.3.
