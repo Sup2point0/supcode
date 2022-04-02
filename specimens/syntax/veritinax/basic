@@ -1,0 +1,8 @@
+specify { syntax = veritinax | revision = 1.0 }
+
+on start {{
+
+  prompt.open()
+  prompt.output("sup")
+
+}}
