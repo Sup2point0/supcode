@@ -1,0 +1,28 @@
+spec code {
+  | language, lan, lang = {sup, supper, suppy}
+  | numc(version, ver, vers)[ver] = 5.3
+  | syntax, syn, synt = {utinax, veritinax, resinax, ...}
+  | revision, rev, revn = syntax {{one}, {one}, {one}, ...}
+  | interpreter, run, runl, intr = {
+    {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
+    {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
+  }
+  | endpoint, end, endp = {{standard, stan, stand}}, str(indicator)
+  | lurk
+}
+
+spec syntax {
+  | int(indent, ind, indt, dent) = 3
+  | bool(significant, notable, note, sigf) = true
+  | spaces, space, spaces = {none,
+    {compact, pact},
+    {amplified, amp},
+    {expansive, exp},
+  }
+  | bool(autoformat, format) = false
+  | colour, col, colc = {nova, ...}
+}
+
+spec run {
+  | out, log, sys = sys, sys.loc(location)
+}
