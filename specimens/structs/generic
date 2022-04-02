@@ -1,0 +1,33 @@
+spec code { ver = 5.3 | syn = utinax }
+
+
+create struct 'name' {
+  on name.create(context, (option)s) [(attribute)s] {
+    set name.'var1' = (option)s#1
+    set name.'var2' = (option)s#2
+    loop for key, value in (attribute)s {
+      set name.var(key) = value
+    }
+  }
+
+  define name.'function'(option) {
+    ...
+  }
+}
+
+
+create struct('name') {
+  define struct.create(context, (option)s) [(attribute)s] {
+    set struct.'var1' = (option)s#1
+    set struct.'var2' = (option)s#2
+    loop for key, value in (attribute)s {
+      set struct.var(key) = value
+    }
+  }
+
+  create func [struct] {
+    define struct.function(option) {
+      ...
+    }
+  }
+}
