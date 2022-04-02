@@ -1,0 +1,1 @@
+<sc> <res> <spec[ver = 5.3]> ✓ sys | λ operate(x, s, y) { openif s? { = sys.op(+) | func.out(x + y) || = sys.op(-) | func.out(x - y) || = sys.op(*) | func.out(x * y) || = sys.op(/) | func.out(x / y) || = sys.op(^) | func.out(x ^ y) } } | \ testing \ | operate(2.0, ^, 6.9) </spec> </res> </sc>
