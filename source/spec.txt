@@ -2,16 +2,18 @@ spec code {
   | language, lan, lang = {sup, supper, suppy}
   | numc(version, ver, vers)[ver] = 5.3
   | syntax, syn, synt = {utinax, veritinax, resinax, ...}
-  | revision, rev, revn = syntax {{one}, {one}, {one}, ...}
+  | revision, rev, revn = syntax {{one}, {numc(1.0)[ver]}, {numc(1.4)[ver]}, ...}
   | interpreter, run, runl, intr = {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
     {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
   }
-  | endpoint, end, endp = {{standard, stan, stand}}, str(indicator)
+  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
   | lurk
 }
 
 spec syntax {
+  | syntax, syn, synt = {utinax, veritinax, resinax, ...}
+  | revision, rev, revn = syntax {{one}, {numc(1.0)[ver]}, {numc(1.4)[ver]}, ...}
   | int(indent, ind, indt, dent) = 3
   | bool(significant, notable, note, sigf) = true
   | spaces, space, spaces = {none,
@@ -24,5 +26,10 @@ spec syntax {
 }
 
 spec run {
+  | interpreter, run, runl, intr = {
+    {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
+    {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
+  }
+  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
   | out, log, sys = sys, sys.loc(location)
 }
