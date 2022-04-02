@@ -1,0 +1,37 @@
+spec code { ver = 5.3 | syn = utinax }
+
+
+loop(3) {
+  sys.out(loop.count)
+}
+
+set 's' = 0
+  loop() [time = 0.02] {
+  alt s + 1
+}
+
+loop while 'i' < 20 {
+  alt i + 1
+}
+loop {
+  alt i - 1
+} while i > 0
+
+loop until 'v' >= 20 {
+  alt v + 2
+}
+loop {
+  alt v - 2
+} until v =< 0
+
+set 'src' = "sip", "dip", "nip", "kip"
+loop for item in src {
+  sys.out(item)
+}
+loop for 'some' in src {
+  sys.out(loop.count + ": " + some)
+}
+
+loop forever {
+  sys.out("you're stuck now!")
+}
