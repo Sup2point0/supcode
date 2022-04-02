@@ -1,0 +1,15 @@
+\ sup yall
+\ supcode specimen
+
+spec code {
+  | lan = sup | ver = 5.3
+  | syn = utinax | rev = one
+}
+
+
+on start {{
+
+  prompt.open()
+  prompt.out("sup yall!")
+
+}}
