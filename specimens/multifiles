@@ -1,0 +1,21 @@
+spec code { ver = 5.3 | syn = utinax }
+
+
+load otherfile
+otherfile.somefunc(otherfile.somevar)
+
+load otherfolder
+otherfolder.anotherfile.somefunc(otherfolder.anotherfile.somevar)
+
+load otherfolder.anotherfile
+anotherfile.somefunc(anotherfile.somevar)
+
+
+prime otherfile
+somefunc(somevar)
+
+prime otherfolder
+otherfile.somefunc(otherfile.somevar)
+
+prime otherfolder.anotherfile
+somefunc(somevar)
