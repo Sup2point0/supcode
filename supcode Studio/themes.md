@@ -1,4 +1,4 @@
-# supcode Studio 2.4 Themes
+# Themes
 
 WIP.
 
