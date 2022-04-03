@@ -26,4 +26,8 @@ try {
   sys.out(divide(2, 0))
 catch sys.error(deflux.zerodiv) |
   sys.out(sys.error(deflux.zerodiv))
+catch any |
+  sys.out("an error occurred")
+catch none |
+  sys.out("successly executed")
 }
