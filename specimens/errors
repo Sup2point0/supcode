@@ -1,0 +1,29 @@
+spec code { ver = 5.3 | syn = utinax }
+
+enable sys
+
+
+try {
+  evoke
+catch |
+  sys.out("an error occurred")
+end |
+  sys.out("terminating")
+}
+
+
+create func {
+  define divide(x, y) {
+    if y = 0 {
+      evoke sys.error(deflux.zerodiv)
+    else |
+      func.out(x / y)
+    }
+  }
+}
+
+try {
+  sys.out(divide(2, 0))
+catch sys.error(deflux.zerodiv) |
+  sys.out(sys.error(deflux.zerodiv))
+}
