@@ -29,5 +29,5 @@ catch sys.error(deflux.zerodiv) |
 catch any |
   sys.out("an error occurred")
 catch none |
-  sys.out("successly executed")
+  sys.out("successfully executed")
 }
