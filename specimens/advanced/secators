@@ -1,0 +1,27 @@
+<supcode>
+  <spec[ver = 5.3 | syn = utinax]>
+
+    <sec 'setup'>
+      <->
+        <class('test')[var]>
+      <->
+        <sec[set | class = test]>
+          state = true
+          score = 0
+          time = 0.0
+        </sec>
+      <->
+    </sec>
+
+    <sec 'main'>
+      <->
+        <func>
+          define secyze(ctx) [(option)s] {
+            func.out()
+          }
+        </func>
+      <->
+    </sec>
+
+  </spec>
+</supcode>
