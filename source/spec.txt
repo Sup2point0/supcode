@@ -8,7 +8,6 @@ spec code {
     {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
   }
   | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
-  | lurk
 }
 
 spec syntax {
@@ -22,7 +21,7 @@ spec syntax {
     {expansive, exp},
   }
   | bool(autoformat, format) = false
-  | colour, col, colc = {nova, ...}
+  | colour, col, colc = {nova, scratch, ...}
 }
 
 spec run {
