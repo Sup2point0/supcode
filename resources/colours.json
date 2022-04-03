@@ -1,0 +1,67 @@
+{
+  "main": {
+    "blue": {
+      "nova blue": "4090f1",
+      "crescent blue": "c0f0ff",
+      "spirit blue": "70c7ff",
+      "sky blue": "45c7f1",
+      "ocean blue": "2070c1",
+      "deep blue": "145090",
+      "electric blue": "40e0ff",
+      "accent blue": "0064f1",
+      "midnight blue": "00172a"
+    },
+    "pink": {
+      "electric pink": "ff0090",
+      "spirit pink": "f190f1"
+    },
+    "grey": {
+      "nova grey": "a9b0b8",
+      "swallow grey": "dfe7f1",
+      "spirit grey": "c7d0d9",
+      "electric grey": "",
+      "ocean grey": "90969e",
+      "storm grey": "70767c",
+      "accent grey": ""
+    }
+  },
+  "major": {
+    "purple": {
+      "spirit purple": "9040f1",
+      "nova purple": "6040f1",
+      "accent purple": "7000ff"
+    },
+    "teal": {
+      "electric teal": "40f190",
+      "lightning teal": "c1fff1",
+      "spirit teal": "60c7c7",
+      "nova teal": "409090"
+    },
+    "lilac": {
+      "nova lilac": "9090f1",
+      "crescent lilac": "c7c7ff"
+    }
+  },
+  "spectrum": {
+    "red": {
+      "nova red": "ff0040",
+      "spirit red": "ff2000",
+      "crescent red": "ffc0a9"
+    },
+    "orange": {
+      "spirit orange": "ff7000",
+      "solar orange": "ff9020"
+    },
+    "yellow": {
+      "solar yellow": "ffa920",
+      "nova yellow": "ffc720",
+      "crescent mellow": "fff0c0"
+    },
+    "green": {
+      "solar green": "70c720",
+      "spirit green": "40c740",
+      "nova green": "00c745",
+      "accent aquamarine": "33c070"
+    }
+  }
+}
