@@ -1,0 +1,12 @@
+prompt.open()
+
+prompt.out("sup")
+prompt.in('response')
+
+set response = prompt.ask("how you doin")
+
+prompt.load(sys.file(info.md))
+
+prompt.out("type something...")[style = prompt(grey)]
+
+prompt.exit()
