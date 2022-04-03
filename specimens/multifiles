@@ -19,3 +19,7 @@ otherfile.somefunc(otherfile.somevar)
 
 prime otherfolder.anotherfile
 somefunc(somevar)
+
+
+prime somestruct in otherfile
+create somestruct()
