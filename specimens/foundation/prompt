@@ -1,11 +1,22 @@
+spec code { ver = 5.3 | syn = utinax | sty = full }
+
+
 prompt.open()
+
+prompt.init()
+prompt.info()
+prompt.help()
 
 prompt.out("sup")
 prompt.in('response')
 
 set response = prompt.ask("how you doin")
 
+
 prompt.load(sys.file(info.md))
+await prompt.drop(sys.file('upload'))
+
+prompt.view(sys.file(demo.exe).window)
 
 prompt.out("type something...")[style = prompt(grey)]
 
