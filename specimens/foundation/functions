@@ -1,0 +1,41 @@
+spec code { ver = 5.3 | syn = utinax | sty = mixed }
+
+
+create function {
+  define myfunc() {
+    func.out("sup")
+  }
+}
+
+create (function)s {
+  define sup(some) {
+    func.out(some)
+  }
+
+  define sip(str(some), int(sips)) {
+    loop(sips) {
+      func.out(some)
+    }
+  }
+
+  define test(func(sip), (dip)s) {
+    loop for item in (dip)s {
+      sip(item)
+    }
+  }
+
+  define testing() [ key = false | code = none ] {
+    if key {
+      if code = "sup" {
+        func.out(0x4090f1)
+      else |
+        evoke
+      }
+    }
+  }
+}
+
+
+define 'somefunc'() {
+  func.out("sup")
+}
