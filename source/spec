@@ -8,6 +8,7 @@ spec code {
     {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
   }
   | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
+  | style, sty, styl = {full, concise}
 }
 
 spec syntax {
@@ -16,9 +17,7 @@ spec syntax {
   | int(indent, ind, indt, dent) = 3
   | bool(significant, notable, note, sigf) = true
   | spaces, space, spaces = {none,
-    {compact, pact},
-    {amplified, amp},
-    {expansive, exp},
+    {compact, pact}, {amplified, amp}, {expansive, exp},
   }
   | bool(autoformat, format) = false
   | colour, col, colc = {nova, scratch, ...}
