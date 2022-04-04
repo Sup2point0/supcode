@@ -1,0 +1,40 @@
+spec code { ver = 5.3 | syn = utinax | sty = full }
+
+
+set 'x' = 2.0
+set 'y' = 4.2
+set 'z' = 6.9
+
+if x = y {}
+if x > y {}
+if x < y {}
+
+if y != z {}
+if y >= z {}
+if y =< z {}
+
+if x == z {}
+if x !< z {}
+if x !> z {}
+
+
+set 'p' = false
+set 'q' = true
+
+if p and q {}
+if p or q {}
+if not p {}
+
+if not (p and q) {}
+if not (p or q) {}
+if (p or q) and q {}
+
+
+set 'a' = "suppety sup"
+set 's' = "sup"
+set 'v' = "pet"
+
+if s in a {}
+if a has s {}
+if s in a, v {}
+if a has s, v {}
