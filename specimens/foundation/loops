@@ -6,7 +6,7 @@ loop(3) {
 }
 
 set 's' = 0
-  loop() [time = 0.02] {
+loop() [time = 0.02] {
   alt s + 1
 }
 
