@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax }
+spec code { ver = 5.3 | syn = utinax | sty = mixed }
 
 
 create struct 'name' {
@@ -11,7 +11,7 @@ create struct 'name' {
   }
 
   define name.'function'(option) {
-    ...
+    func.out(name.option)
   }
 }
 
@@ -27,7 +27,7 @@ create struct('name') {
 
   create func [struct] {
     define struct.function(option) {
-      ...
+      func.out(struct.option)
     }
   }
 }
