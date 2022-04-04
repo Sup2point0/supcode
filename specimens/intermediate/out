@@ -1,0 +1,20 @@
+spec code { ver = 5.3 | syn = utinax | sty = stan }
+
+
+sys.out("sup")
+
+prompt.open()
+prompt.out("sup")
+
+define 'test'(value) {
+  func.out(value * 2)
+}
+
+sys.out(
+  loop for i in 1~20 {
+    if i > 2 {
+      loop.out(i)
+      loop.exit()
+    }
+  }
+)
