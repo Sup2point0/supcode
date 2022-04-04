@@ -1,9 +1,9 @@
-spec code { ver = 5.3 | syn = utinax }
+spec code { ver = 5.3 | syn = utinax | sty = mixed }
 
 
-set 'i' = random(1, 10)
+set 'i' = random(1~10)
 alt i + ran(-10, 10)
 
-set 'stuff' = "apricots", "banananas", "cherries", "dragonfruit"
+set 'stuff' = "apricots", "bananas", "cherries", "dragonfruit"
 set 'pick' = random(stuff)[opt]
 sys.out("let's have some `pick` today")
