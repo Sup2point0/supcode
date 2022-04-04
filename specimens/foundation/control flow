@@ -1,0 +1,22 @@
+spec code { ver = 5.3 | syn = utinax | sty = full }
+
+
+set 'cond' = true
+
+if cond {
+  sys.out("sup")
+}
+
+if cond {
+  sys.out("true")
+else |
+  sys.out("false")
+}
+
+if cond {
+  sys.out("yes")
+elif cond != none |
+  sys.out("maybe")
+else |
+  sys.out("no")
+}
