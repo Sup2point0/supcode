@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax }
+spec code { ver = 5.3 | syn = utinax | sty = stan }
 
 
 prompt.open()
@@ -12,11 +12,11 @@ prompt.in('name')
 set greeting = ran("sup", "hey")[opt]
 prompt.out(greeting " " case(name)[title] "!")
 
-set 'pick' = ran(1, 20)
+set 'pick' = ran(1~20)
 prompt.out("isn't " + pick + " a cool number")
 
 set 'day' = "Thurs" + "day"
-set 'date' = ran(1, 365)
+set 'date' = ran(1~365)
 prompt.out("today's `day`, and also day `date` of the year")
 
 prompt.out("gbye `case(name)[title]`, it was `ran("nice", "fun")[opt]` meeting you!")
