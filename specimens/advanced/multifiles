@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax }
+spec code { ver = 5.3 | syn = utinax | sty = full }
 
 
 load otherfile
