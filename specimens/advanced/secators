@@ -1,5 +1,5 @@
 <supcode>
-  <spec[ver = 5.3 | syn = utinax]>
+  <spec[ver = 5.3 | syn = utinax | sty = secated]>
 
     <sec 'setup'>
       <->
@@ -16,10 +16,12 @@
     <sec 'main'>
       <->
         <func>
-          define secyze(ctx) [(option)s] {
+          define secyze(ctx = none) [(option)s] {
             func.out()
           }
         </func>
+      <->
+        secyze()
       <->
     </sec>
 
