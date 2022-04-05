@@ -1,0 +1,30 @@
+spec code { ver = 5.3 | syn = utinax | sty = stan }
+
+
+\ a comment
+
+\ an inline comment \
+
+\a negating comment
+
+\\
+  a multiline
+  comment
+\\
+
+
+\\\
+  a multiline comment
+  \ sys.out("sup")
+  with breaks
+\\\
+
+\\\
+  a multiline comment
+  \\
+    if true {
+      sys.out("sup")
+    }
+  \\
+  with multiline breaks
+\\\
