@@ -1,3 +1,3 @@
 # discord.sc
 
-WIP.
+An endorser supcode extension for interacting with the Discord API.
