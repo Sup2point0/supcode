@@ -17,6 +17,10 @@ if x == z {}
 if x !< z {}
 if x !> z {}
 
+if x = y = z {}
+if x < y =< z {}
+if x !> y != z {}
+
 
 set 'p' = false
 set 'q' = true
@@ -38,3 +42,7 @@ if s in a {}
 if a has s {}
 if s in a, v {}
 if a has s, v {}
+
+
+set 't' = { 2 + 2 = 4 }
+if t {}
