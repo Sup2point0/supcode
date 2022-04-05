@@ -1,0 +1,39 @@
+spec code { ver = 5.3 | syn = utinax | sty = mixed }
+
+
+on event() {{
+  define callback(ctx, (info)s) [(option)s] {
+    sys.log((info)s)
+  }
+}}
+
+on start {{
+  define main() {
+    sys.out("sup")
+  }
+}}
+
+on event('test') {{
+  sys.out("test")
+}}
+
+invoke test
+
+
+on event(ctx, (info)s, (option)s) {{
+  sys.log((info)s)
+}}
+
+on start {{
+  sys.out("sup")
+}}
+
+on sys.out("sup") {{
+  sys.log("sup")
+}}
+
+on event 'test' {{
+  sys.out("sup")
+}}
+
+invoke test
