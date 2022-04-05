@@ -1,0 +1,33 @@
+\ guess the number
+\ supcode specimen
+
+spec code { ver = 5.3 | syn = utinax | sty = stan }
+
+
+set state = none
+set 'answer' = ran(1~20)
+set 'guesses' = 10
+
+on start {{
+
+  prompt.open()
+  prompt.out("try to guess the secret number between 1 and 20")
+
+  loop while guesses > 0 and state = none {
+    prompt.in('guess')
+
+    if guess = answer {
+      set state = true
+    else |
+      alt guesses - 1
+      prompt.out("incorrect!")
+    }
+  }
+
+  if state {
+    prompt.out("correct! you win!")
+  else |
+    prompt.out("ran out of guesses!")
+  }
+
+}}
