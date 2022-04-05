@@ -1,0 +1,14 @@
+spec code { ver = 5.3 | syn = utinax | sty = full }
+
+
+enable sys
+
+sys.out(sys.loc.folder.name)
+sys.log(sys.loc.path.len)
+
+sys.open(sys.file(test.exe))
+
+evoke sys.error(afflux)
+
+
+sys.exit()
