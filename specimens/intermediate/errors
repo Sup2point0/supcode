@@ -1,11 +1,11 @@
-spec code { ver = 5.3 | syn = utinax }
+spec code { ver = 5.3 | syn = utinax | sty = full }
 
 enable sys
 
 
 try {
   evoke
-catch |
+evade |
   sys.out("an error occurred")
 end |
   sys.out("terminating")
@@ -24,10 +24,10 @@ create func {
 
 try {
   sys.out(divide(2, 0))
-catch sys.error(deflux.zerodiv) |
+evade sys.error(deflux.zerodiv) |
   sys.out(sys.error(deflux.zerodiv))
-catch any |
+evade any |
   sys.out("an error occurred")
-catch none |
+evade none |
   sys.out("successfully executed")
 }
