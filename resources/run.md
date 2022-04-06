@@ -2,10 +2,6 @@
 
 WIP.
 
-## X-Class
-
-...
-
 ### Deravile
 
 ...
@@ -15,10 +11,6 @@ WIP.
 ...
 
 ### Xendovile
-
-...
-
-## Y-Class
 
 ...
 
