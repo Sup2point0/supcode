@@ -11,5 +11,3 @@ Supcode comes with powerful customizability and convenient shortcuts. Like Scrat
 ### Files and Applications
 
 Supcode files use the `.sc` filename extension. Often, this has a number following it to indicate the version number, i.e. `.sc4`, `.sc5`, etc. to allow for identification, version conversion and compatibility indication. Custom extensions use the `.scx` file extension. There are also a several other file extensions for highly specialized uses, such as `.scd` or `.scv`, though these are rarely used.
-
-> *The above has been taken from The Complete Comprehensive Guide to Supcode (currently unreleased), version 6.14.7, updated as of April 2.*
