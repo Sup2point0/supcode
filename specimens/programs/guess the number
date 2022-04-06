@@ -7,6 +7,7 @@ spec code { ver = 5.3 | syn = utinax | sty = stan }
 set 'state' = none
 set 'answer' = ran(1~20)
 set 'guesses' = 10
+set 'guess' = none
 
 on start {{
 
@@ -14,7 +15,7 @@ on start {{
   prompt.out("try to guess the secret number between 1 and 20")
 
   loop while guesses > 0 and state = none {
-    prompt.in('guess')
+    prompt.in(guess)
 
     if guess = answer {
       set state = true
