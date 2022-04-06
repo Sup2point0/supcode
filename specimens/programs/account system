@@ -1,0 +1,60 @@
+\ account system
+\ supcode specimen
+
+spec code { ver = 5.3 | syn = utinax | sty = stan }
+
+
+set 'data' = {"sup": "4761"}
+set 'username' = none
+set 'password' = none
+
+set 'action' = none
+set 'state' = false
+
+prompt.open()
+
+forever on start {{
+
+  prompt.out("""
+    what would you like to do?
+    - type 'login' to access an existing account
+    - type 'create' to register a new account
+    - type 'exit' to exit the program
+  """)
+  prompt.in(action)
+
+  if action = "login" {
+    loop until state {
+      prompt.out("enter a username")
+      prompt.in(username)
+
+      if username in database.keys {
+        set state = true
+      else |
+        prompt.out("account not found")
+      }
+    }
+
+    set state = false
+    loop until state {
+      prompt.out("enter the password")
+      prompt.in(password)
+
+      if password = data#username {
+        set state = true
+      else |
+        prompt.out("incorrect password")
+      }
+    }
+
+    prompt.out("successfully logged in to `username`"
+
+  elif action = "create" |
+    ...
+
+  elif action = "exit" |
+    sys.exit()
+
+  }
+
+}}
