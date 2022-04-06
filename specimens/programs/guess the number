@@ -4,7 +4,7 @@
 spec code { ver = 5.3 | syn = utinax | sty = stan }
 
 
-set state = none
+set 'state' = none
 set 'answer' = ran(1~20)
 set 'guesses' = 10
 
@@ -20,7 +20,15 @@ on start {{
       set state = true
     else |
       alt guesses - 1
-      prompt.out("incorrect!")
+      if ran(1~2) = 2 {
+        prompt.out("incorrect!")
+      else |
+        if guess > answer {
+          prompt.out("lower!")
+        elif guess < answer |
+          prompt.out("higher!")
+        }
+      }
     }
   }
 
