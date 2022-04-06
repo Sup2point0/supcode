@@ -12,11 +12,18 @@ spec code { ver = 5.3 | syn = utinax | sty = stan }
   comment
 \\
 
+\\
+  a multiline
+  documentation comment
+  \
+  with line breaks
+\\\
+
 
 \\\
   a multiline comment
   \ sys.out("sup")
-  with breaks
+  with code breaks
 \\\
 
 \\\
@@ -26,5 +33,19 @@ spec code { ver = 5.3 | syn = utinax | sty = stan }
       sys.out("sup")
     }
   \\
-  with multiline breaks
+  with multiline code breaks
+\\\
+
+\\\
+  a multiline comment
+  with multiline code breaks
+  \\
+    if false {
+      \ with comments
+      sys.out("sup")
+    }
+  \\
+  with line
+  \
+  breaks
 \\\
