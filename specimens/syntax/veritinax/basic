@@ -1,4 +1,8 @@
-specify { syntax = veritinax | revision = 1.0 }
+specify {
+  | syntax = veritinax
+  | revision = 1.0
+}
+
 
 on start {{
 
