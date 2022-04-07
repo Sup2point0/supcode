@@ -8,7 +8,7 @@ spec code {
     {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
   }
   | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
-  | style, sty, styl = {full, concise}
+  | style, sty, styl = {full, concise, {standard, stan}, mixed}
 }
 
 spec syntax {
