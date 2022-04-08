@@ -4,13 +4,26 @@ A guide to all the inbuilt errors in Supcode.
 
 ## Contents
 
-- `flux` class
-  - `influx`
-  - `deflux`
-  - `reflux`
-  - `afflux`
-  - `efflux`
-  - `teflux`
-- `dux` class
-  - `indux`
-  - `redux`
+`-flux`
+- `deflux`
+- `reflux`
+- `influx`
+- `afflux`
+- `efflux`
+- `conflux`
+
+`-dux`
+- `redux`
+- `indux`
+
+`-crux`
+- `accrux`
+
+## `flux`
+
+### `deflux`
+
+| error | description | example | source |
+| :---- | :---------- | :------ | :----- |
+| `.zerodiv` | division by 0 error | `2 / 0` | dividing any *suitable* value by a value of 0
+| `.infodiv` | division by infinity error | `2 / inf` | dividing any *suitable* value by a value of infinity
