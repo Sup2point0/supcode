@@ -1,6 +1,6 @@
 # supcode Codex
 
-An extensive guide to the general nomenclature of Supcode. For terminology (which differs), see [here](terminology.md).
+An extensive guide to the general nomenclature of Supcode. For terminology (which differs), see [here](/terminology.md).
 
 ## Suffixes
 
