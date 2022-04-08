@@ -1,0 +1,60 @@
+\ advanced discord bot
+\ discord.sc specimen
+
+spec code { ver = 5.3 | syn = utinax | sty = stan }
+config discord { ver = 1.1 }
+
+
+locate, activate discord
+activate slash in discord
+
+activate securex
+
+
+create discord.bot(demo) [ key = securex.redact("token") | intents = all ] {
+  let bot.commands.prefix = "."
+}
+
+
+on demo.connect {{
+  sys.out("connected")
+}}
+
+create discord.command {
+  define bot.test(ctx) {
+    await ctx.out("online")
+  }
+}
+
+create discord.slash.command [desc = "help and info"] {
+  define bot.help(ctx) {
+    await ctx.respond() [embed = discord.embed() [
+      head.title = "Help", 
+      main.colour = 0x4090f1,
+      main.text = """
+        A demonstrative advanced Discord bot, showcasing all of the capabilities of discord.sc
+      """,
+      foot.text = "Requested by `ctx.message.sender`",
+    ]]
+  }
+}
+
+create discord.slash.command [desc = "Get profile picture of a user in the server"] {
+  define bot.pfp(ctx, discord.member(user)) {
+    await ctx.respond() [attach = file(user.avatar.url), ephemeral = true]
+  }
+}
+
+create discord.slash.command [desc = ""] {
+  define bot.func(ctx, discord.option(choice)[...]) {
+    ...
+  }
+}
+
+async on discord.message.send(ctx) {{
+  sys.out(ctx.message.content)
+  await demo.commands.process(ctx)
+}}
+
+
+demo.start()
