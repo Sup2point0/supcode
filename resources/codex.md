@@ -12,9 +12,9 @@ In general, you can infer what a name refers to by its suffix. As with anything,
 | `-ix` | `datix`, `lattrix` | internal extension |
 | `-yx` | `sensyx`, `geometryx` | subextension |
 | `-ax`, `-inax` | `utinax`, `resinax` | syntax flavour |
-| `ux` | `influx`, `reflux` | error |
-| `ox` | `NEOX`, `RESNOX` | syntax highlighting colour configuration |
-| `ite`, `ion` | `lite`, `nion` | supcode Studio themes |
-| `vile`, `volt` | `deravile`, `runvolt` | interpreter |
-| `core` | `pycore`, `swiftcore` | module |
+| `-ux` | `influx`, `reflux` | error |
+| `-ox` | `NEOX`, `RESNOX` | syntax highlighting colour configuration |
+| `-ite`, `-ion` | `lite`, `nion` | supcode Studio themes |
+| `-vile`, `-volt` | `deravile`, `runvolt` | interpreter |
+| `-core` | `supcode`, `pycore` | module |
 
