@@ -10,10 +10,9 @@ set 'password' = none
 
 set 'action' = none
 set 'state' = false
-
 prompt.open()
 
-forever on start {{
+loop forever on start {{
 
   prompt.out("""
     what would you like to do?
@@ -25,32 +24,42 @@ forever on start {{
 
   if action = "login" {
     loop until state {
-      prompt.out("enter a username")
-      prompt.in(username)
-
+      set username = prompt.ask("enter a username")
       if username in database.keys {
         set state = true
       else |
-        prompt.out("account not found")
+        prompt.out("username not found")
       }
-    }
-
-    set state = false
+    } set state = false
+    
     loop until state {
-      prompt.out("enter the password")
-      prompt.in(password)
-
+      set password = prompt.ask("enter the password")
       if password = data#username {
         set state = true
       else |
         prompt.out("incorrect password")
       }
     }
-
-    prompt.out("successfully logged in to `username`"
+    prompt.out("successfully logged in to `username`")
 
   elif action = "create" |
-    ...
+    loop until state {
+      set username = prompt.out("enter a username")
+      if username in database.keys {
+        prompt.out("username already exists")
+      else |
+        set state = true
+      }
+    } set state = false
+    
+    loop until state {
+      password = prompt.ask("enter a password")
+      if password != prompt.ask("confirm password") {
+        prompt.out("passwords do not match")
+      else |
+        set data#username = password
+    }
+    prompt.out("account successfully created")
 
   elif action = "exit" |
     sys.exit()
