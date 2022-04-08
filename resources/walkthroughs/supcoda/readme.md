@@ -14,4 +14,4 @@ Welcome to *supcoda*, the new updated full walkthrough to Supcode, and the succe
 
 ## Extended
 
-The *supcoda Prime*, an extension of *supcoda* can be found [here](supcoda).
+The *supcoda Prime*, an extension of *supcoda* can be found [here](https://github.com/Sup2point0/supcode/tree/sup/resources/walkthroughs/supcoda%20Prime).
