@@ -3,6 +3,7 @@ spec code { ver = 5.3 | syn = utinax | sty = mixed }
 
 activate discord
 
+
 create discord.client(name) [
   | key = "token"
   | intents = all
