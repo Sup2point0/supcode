@@ -7,3 +7,9 @@ An endorsed supcode extension for interacting with the Discord API, specifically
 ### `slash`
 
 Slash command implementation and functionality.
+
+## Intrinsics
+
+### `disflux`
+
+Errors.
