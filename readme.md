@@ -14,4 +14,4 @@ Supcode files use the `.sc` filename extension. Often, this has a number followi
 
 ## Specimens
 
-Various specimens can be found [here](/specimens)
+Various specimens can be found [here](/specimens).
