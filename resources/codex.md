@@ -9,7 +9,7 @@ In general, you can infer what a name refers to by its suffix. As with anything,
 | suffix | example | category |
 | :----- | :------ | :------- |
 | `-ex` | `cortex`, `xyrex` | external extension |
-| `-ix` | `datix`, `lattrix` | internal extension |
+| `-ix` | `datix`, `lattrix` | internal extension [^ix] |
 | `-yx` | `sensyx`, `geometryx` | subextension |
 | `-ax`, `-inax` | `utinax`, `resinax` | syntax flavour |
 | `-ux` | `influx`, `reflux` | error |
@@ -18,3 +18,4 @@ In general, you can infer what a name refers to by its suffix. As with anything,
 | `-vile`, `-volt` | `deravile`, `runvolt` | interpreter |
 | `-core` | `supcode`, `pycore` | module |
 
+[^ix]: quite a few exceptions exist, such as `stadex` or `cloudex` - this is to avoid the '-dix' ending, which could result in... complications
