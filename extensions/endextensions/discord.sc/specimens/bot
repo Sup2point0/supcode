@@ -32,9 +32,9 @@ create discord.command 'x2' {
   }
 }
 
-create discord.slash.command [desc = "help and info"] {
+create discord.slash.command [ desc = "help and info" ] {
   define bot.help(ctx) {
-    await ctx.respond() [embed = discord.embed() {
+    await ctx.respond() [ embed = discord.embed() {
       let head.title = "Help"
       let main.colour = 0x4090f1
       let main.text = """
@@ -45,13 +45,13 @@ create discord.slash.command [desc = "help and info"] {
   }
 }
 
-create discord.slash.command [desc = "get profile picture of a user in the server"] {
+create discord.slash.command [ desc = "get profile picture of a user in the server" ] {
   define bot.pfp(ctx, discord.member(user)) {
-    await ctx.respond() [attach = sys.file(user.avatar.url), ephemeral = true]
+    await ctx.respond() [ attach = sys.file(user.avatar.url) | ephemeral = true ]
   }
 }
 
-create discord.slash.command [desc = ""] {
+create discord.slash.command [ desc = "" ] {
   define bot.func(ctx, discord.option(choice)[...]) {
     ...
   }
@@ -62,10 +62,10 @@ on discord.message.send(ctx) {{
   await demo.process(ctx)
 }}
 
-on discord.interaction(ctx) {
+on discord.interaction(ctx) {{
   sys.log(interaction.data)
   await demo.slash.process(ctx)
-}
+}}
 
 
 demo.start()
