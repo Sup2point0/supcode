@@ -1,0 +1,11 @@
+spec code { ver = 5.3 | syn = utinax | sty = full }
+
+
+enable sys
+
+
+set 'f' = sys.file(test.txt)
+
+loop for line in f {
+  sys.out("`line.count`  `line.content`")
+}
