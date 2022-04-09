@@ -1,0 +1,15 @@
+spec code { ver = 5.3 | syn = utinax | sty = full }
+
+
+set 'x' = 2
+set 'y' = 7
+set 'z' = 13
+
+sys.out(x + y)
+sys.out(x - y)
+sys.out(x * y)
+sys.out(x / y)
+sys.out(x ^ y)
+sys.out(x % y)
+
+sys.out((x + y) * z)
