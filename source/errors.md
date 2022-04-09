@@ -44,6 +44,7 @@ A runtime error.
 | error | description | example | source |
 | :---- | :---------- | :------ | :----- |
 | `.overflow` | memory overflow | `set 'crash' = 0~(69^420)` | consuming too much memory |
+| `.timeout` | operation timeout | `...` | an operation left hanging |
 
 ### `influx`
 
@@ -51,6 +52,8 @@ An location error.
 
 | error | description | example | source |
 | :---- | :---------- | :------ | :----- |
+| `.index` | index error | `(1, 2, 3)#4` | indexing an iterable out of its range |
+| `.key` | key error | `{"sup": 2.0}#"sus"` | looking up a key that does not exist in a mapping |
 
 ### `reflux`
 
@@ -80,6 +83,8 @@ A generic interpreter error.
 
 | error | description | example | source |
 | :---- | :---------- | :------ | :----- |
+| `.exit` | an unexpected exit call | `...` | |
+| `.interrupt` | a system interrupt | `...` | |
 
 ## `dux`
 
