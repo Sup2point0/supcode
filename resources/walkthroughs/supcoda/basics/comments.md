@@ -31,7 +31,7 @@ To place it between elements of code, a second `\` can be used to end the commen
 func("sup", 2.0 \ like so \ , true)
 ```
 
-However, this is highly discouraged, as it leaves the code quite unreadable.
+However, this is highly discouraged, as it leaves the code quite unreadable. Its intended use is for single-line Supcode, although even then comments are rarely used, since the code is not intended for human reading.
 
 Comments can span multiple lines if necessary. This is denoted by double `\` both at the start and end of the comment segment.
 
@@ -72,7 +72,7 @@ To indicate a comment segment with breaks, triple `\` are used. Single-line and 
   look like this
   
   This code will run
-  \ prompt.out("break")
+  \prompt.out("break")
   
   and so will this section
   \\
