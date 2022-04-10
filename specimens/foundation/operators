@@ -5,11 +5,20 @@ set 'x' = 2
 set 'y' = 7
 set 'z' = 13
 
-sys.out(x + y)
-sys.out(x - y)
-sys.out(x * y)
-sys.out(x / y)
-sys.out(x ^ y)
-sys.out(x % y)
+x + y
+x - y
+x * y
+x / y
+x ^ y
+x % y
 
-sys.out((x + y) * z)
+(x + y) * z
+
+sqrt(x)
+
+sin(x)
+cos(y)
+tan(z)
+asin(x)
+acos(y)
+atan(z)
