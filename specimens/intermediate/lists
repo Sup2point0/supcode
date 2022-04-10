@@ -1,0 +1,18 @@
+spec code { ver = 5.4 | syn = utinax | sty = full }
+
+
+set 'l' = 1, 2, 3
+add 4 to l
+alt l + 5
+
+set l#1 = 0
+set l#(l.len) = 6
+set l#(-2) = 5
+
+loop for i in 1~l.len {
+  sys.out("`i`/`l.len`: `l#i`")
+}
+
+loop for item in l {
+  sys.out("`list:item`: `item`")
+}
