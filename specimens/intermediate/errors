@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax | sty = full }
+spec code { ver = 5.4 | syn = utinax | sty = full }
 
 enable sys
 
@@ -15,7 +15,7 @@ end |
 create func {
   define divide(x, y) {
     if y = 0 {
-      evoke sys.error(deflux.zerodiv)
+      evoke deflux.zerodiv
     else |
       func.out(x / y)
     }
@@ -24,8 +24,8 @@ create func {
 
 try {
   sys.out(divide(2, 0))
-evade sys.error(deflux.zerodiv) |
-  sys.out(sys.error(deflux.zerodiv))
+evade deflux.zerodiv |
+  sys.out(deflux.zerodiv)
 evade any |
   sys.out("an error occurred")
 evade none |
