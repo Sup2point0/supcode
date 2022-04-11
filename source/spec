@@ -1,18 +1,29 @@
 spec code {
   | language, lan, lang = {sup, supper, suppy}
-  | numc(version, ver, vers)[ver] = 5.3
-  | syntax, syn, synt = {utinax, veritinax, resinax, ...}
-  | revision, rev, revn = syntax {{one}, {numc(1.0)[ver]}, {numc(1.4)[ver]}, ...}
+  | numc(version, ver, vers)[ver] = 5.4
+  | syntax, syn, synt = {utinax, veritinax, resinax}
+  | revision, rev, revn = syntax {utinax: {one}, veritinax: {numc(1.1)[ver]}, resinax: {numc(1.4)[ver]}}
   | interpreter, run, runl, intr = {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
-    {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
+    {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
   | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
   | style, sty, styl = {full, concise, {standard, stan}, mixed}
 }
 
 spec syntax {
-  | syntax, syn, synt = {utinax, veritinax, resinax, ...}
+  | syntax, syn, synt = {utinax, veritinax, resinax}
+  | revision, rev, revn = syntax {{utinax: {one}, veritinax: {numc(1.1)[ver]}, resinax: {numc(1.4)[ver]}}
+  | interpreter, run, runl, intr = {
+    {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
+    {runvolt, rvt, runv}, {syvolt, svt, syvt},
+  }
+  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
+  | style, sty, styl = {full, concise, {standard, stan}, mixed}
+}
+
+spec syntax {
+  | syntax, syn, synt = {utinax, veritinax, resinax}
   | revision, rev, revn = syntax {{one}, {numc(1.0)[ver]}, {numc(1.4)[ver]}, ...}
   | int(indent, ind, indt, dent) = 3
   | bool(significant, notable, note, sigf) = true
@@ -20,13 +31,29 @@ spec syntax {
     {compact, pact}, {amplified, amp}, {expansive, exp},
   }
   | bool(autoformat, format) = false
-  | colour, col, colc = {nova, scratch, ...}
+  | colour, color, col, colc = {nova, scratch, ...}
 }
 
 spec run {
   | interpreter, run, runl, intr = {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
-    {runvolt, rvt, runv}, {syvolt, svt, syvt}, ...
+    {runvolt, rvt, runv}, {syvolt, svt, syvt},
+  }
+  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
+  | out, log, sys = sys, sys.loc(location)
+  | int(indent, ind, indt, dent) = 3
+  | bool(significant, notable, note, sigf) = true
+  | spaces, space, spaces = {none,
+    {compact, pact}, {amplified, amp}, {expansive, exp},
+  }
+  | bool(autoformat, format) = false
+  | colour, color, col, colc = {nova, scratch, ...}
+}
+
+spec run {
+  | interpreter, run, runl, intr = {
+    {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
+    {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
   | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
   | out, log, sys = sys, sys.loc(location)
