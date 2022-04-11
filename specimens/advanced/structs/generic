@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax | sty = mixed }
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
 
 
 create struct 'name' {
@@ -11,23 +11,35 @@ create struct 'name' {
   }
 
   define name.'function'(option) {
-    func.out(name.option)
+    func.out(name.var(option))
+  }
+
+  set 'content' = "sup"
+
+  define struct.'view'() {
+    func.out(content)
   }
 }
 
 
 create struct('name') {
-  define struct.create(context, (option)s) [(attribute)s] {
-    set struct.'var1' = (option)s#1
-    set struct.'var2' = (option)s#2
+  define self.create(context, (option)s) [(attribute)s] {
+    set self.'var1' = (option)s#1
+    set self.'var2' = (option)s#2
     loop for key, value in (attribute)s {
-      set struct.var(key) = value
+      set self.var(key) = value
     }
   }
 
-  create func [struct] {
-    define struct.function(option) {
-      func.out(struct.option)
+  create func [self] {
+    define self.function(option) {
+      func.out(self.var(option))
     }
+  }
+
+  set struct.'content' = "sup"
+
+  define func [struct] {
+    func.out(content)
   }
 }
