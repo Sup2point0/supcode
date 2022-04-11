@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax }
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
 
 
 set 'cond' = true
@@ -8,6 +8,6 @@ set cond = false
 set sip = { if cond || sip.len + ran(-2, 2) | sip.len }
 
 set cond = none
-loop({if cond > none then 20 else 2}) {
-  sys.out({if loop.count > 10 || "hmmm" | "hmm"})
+loop({ if cond > none then 20 else 2 }) {
+  sys.out({ if loop.count > 10 || "hmmm" | "hmm" })
 }
