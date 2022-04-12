@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax | sty = full }
+spec code { ver = 5.4 | syn = utinax | sty = full }
 
 
 prompt.open()
@@ -10,13 +10,32 @@ prompt.help()
 prompt.out("sup")
 prompt.in('response')
 
-set response = prompt.ask("how you doin")
+set 'response' = prompt.ask("how you doin")
 
+set 'initial', 'second' = prompt.collect(
+  "what's your name?",
+  "what's your favourite colour?")
+
+
+prompt.open() [
+  | size.x = 1920 | size.y = 1080
+  | overlay = true | focus = true
+]
+
+prompt.open() [
+  | size = sys.presets.fill[max]
+]
 
 prompt.load(sys.file(info.md))
 await prompt.drop(sys.file('upload'))
 
-prompt.view(sys.file(demo.exe).window)
+prompt.view(sys.file("demo.exe").window)
+
+prompt.new('window') {
+  window.open()
+  window.init()
+}
+
 
 prompt.out("type something...")[style = prompt(grey)]
 
