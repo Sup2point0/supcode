@@ -26,10 +26,10 @@ prompt.open() [
   | size = sys.presets.fill[max]
 ]
 
-prompt.load(sys.file(info.md))
+prompt.load(sys.file('info.md'))
 await prompt.drop(sys.file('upload'))
 
-prompt.view(sys.file("demo.exe").window)
+prompt.view(sys.file('demo.exe').window)
 
 prompt.new('window') {
   window.open()
