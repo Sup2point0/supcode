@@ -100,7 +100,7 @@ Extension tools and management.
 ### `genex`
 System configuration.
 
-### `Jedex`
+### `jedex`
 Order execution.
 
 ### `kinex`
@@ -118,7 +118,7 @@ Searching and sorting.
 ### `securex`
 Secrets and security, encoding and encryption.
 
-### `Seprex`
+### `seprex`
 Hacking and remote access.
 
 ## Extextensions
