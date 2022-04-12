@@ -16,6 +16,12 @@ In general, you can infer what a name refers to by its suffix. As with anything,
 | `-ox` | `NEOX`, `RESNOX` | syntax highlighting colour configuration |
 | `-ite`, `-ion` | `lite`, `nion` | supcode Studio themes |
 | `-vile`, `-volt` | `deravile`, `runvolt` | interpreter |
-| `-core` | `supcode`, `pycore` | module |
+| `-core` | `supcore`, `pycore` | module |
 
 [^ix]: quite a few exceptions exist, such as `stadex` or `cloudex` - this is to avoid the '-dix' ending, which could result in... complications
+
+## Terminology
+
+### Parts of the Code
+
+...
