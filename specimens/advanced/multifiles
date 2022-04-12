@@ -1,25 +1,25 @@
 spec code { ver = 5.3 | syn = utinax | sty = full }
 
 
-load otherfile
-otherfile.somefunc(otherfile.somevar)
+load afile
+afile.afunc(afile.avar)
 
-load otherfolder
-otherfolder.anotherfile.somefunc(otherfolder.anotherfile.somevar)
+load afolder
+afolder.afile.afunc(afolder.afile.avar)
 
-load otherfolder.anotherfile
-anotherfile.somefunc(anotherfile.somevar)
-
-
-prime otherfile
-somefunc(somevar)
-
-prime otherfolder
-otherfile.somefunc(otherfile.somevar)
-
-prime otherfolder.anotherfile
-somefunc(somevar)
+load afolder.afile
+afile.afunc(afile.avar)
 
 
-prime somestruct in otherfile
-create somestruct()
+prime afile
+afunc(avar)
+
+prime afolder
+afile.afunc(afile.avar)
+
+prime afolder.afile
+afunc(avar)
+
+
+prime astruct in afile
+create astruct()
