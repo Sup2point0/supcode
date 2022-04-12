@@ -1,0 +1,20 @@
+spec code { ver = 5.4 | syn = utinax | sty = full }
+
+
+set 'cond' = true
+
+if cond loop(2) {
+  sys.out("sup")
+}
+
+loop(20) if ran(1~20) > 10 {
+  sys.out("sip")
+}
+
+
+set 'i' = 0
+set 'state' = true
+
+loop while state until i > 20 {
+  alt i + 1
+}
