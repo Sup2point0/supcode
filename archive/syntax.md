@@ -25,9 +25,18 @@ An archive of all the past syntax notation standards for Supcode. For each, thei
 
 ### `iSIV-RES-1.9`
 
+Integrated Supcode Four (IV)
+REadable Syntax notation standard
+
 ### `iNAS-QSX-1.6`
 
+Interpretable New Abbreviated Supcode syntax notation standard
+for Quick Script eXchange
+
 ### `iXR-SDRAM-3`
+
+eXtremely Readable
+Special Data Representation Access Module
 
 ## supcode 4.0
 
