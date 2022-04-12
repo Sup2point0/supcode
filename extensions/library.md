@@ -1,6 +1,6 @@
-# supcode Extension Library
+# supcode Extensions Library
 
-An assortment of extensions available in Supcode.
+An assortment of extensions available for Supcode.
 
 ## Ixtensions
 
@@ -26,6 +26,9 @@ Cloud connectivity.
 
 ### `complex`
 A complex extension containing a plethora of presets.
+
+### `connectix`
+Online connectivity and web requests.
 
 ### `constructix`
 List (and other sequences) construction.
@@ -79,7 +82,44 @@ Pen rendering.
 
 ## Endextensions
 
-...
+### `cortex`
+Artificial application operation and control.
+
+### `campex`
+Permanent data storage (json abstraction).
+
+### `cerex`
+Text parsing and comprehension.
+
+### `devex`
+Various developer and debugging tools.
+
+### `excex`
+Extension tools and management.
+
+### `genex`
+System configuration.
+
+### `Jedex`
+Order execution.
+
+### `kinex`
+Hardware connectivity.
+
+### `litex`
+Extensive and advanced text markup and formatting.
+
+### `modex`
+Modifications.
+
+### `quorex`
+Searching and sorting.
+
+### `securex`
+Secrets and security, encoding and encryption.
+
+### `Seprex`
+Hacking and remote access.
 
 ## Extextensions
 
