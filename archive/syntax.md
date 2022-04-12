@@ -1,6 +1,6 @@
 # supcode Syntax Notation Standards
 
-An archive of all the past syntax notation standards for Supcode. For each, their latest revision is recorded.
+An archive of all the past syntax notation standards of Supcode. For each, their last revision is recorded.
 
 ## supcode 2.0
 
