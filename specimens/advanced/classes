@@ -1,0 +1,29 @@
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
+
+
+create class('sup')[var] {
+  set sup.'state' = 2.0
+}
+
+create class('sip')[func] {
+  define sip.'test'() {
+    func.out(sup.state)
+  }
+}
+
+create class('sus')[struct] {
+  create struct('nova') {
+    ...
+  }
+}
+
+create sus.nova(...)
+
+
+create class('main') {
+  set main.'state' = true
+
+  define main.'run'() {
+    func.out(main.state)
+  }
+}
