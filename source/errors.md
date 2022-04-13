@@ -48,10 +48,11 @@ A runtime error.
 
 ### `influx`
 
-An location error.
+A location error.
 
 | error | description | example | source |
 | :---- | :---------- | :------ | :----- |
+| `.undefined` | undefined element | `sys.out(sup)` | referencing an undefined element
 | `.index` | index error | `(1, 2, 3)#4` | indexing an iterable out of its range |
 | `.key` | key error | `{"sup": 2.0}#"sus"` | looking up a key that does not exist in a mapping |
 
@@ -70,12 +71,25 @@ A calculation error.
 | error | description | example | source |
 | :---- | :---------- | :------ | :----- |
 | `.zerodiv` | division by 0 error | `2 / 0` | dividing any *valid* value by a value of 0 |
-| `.infodiv` | division by infinity error | `2 / inf` | dividing any *valid* value by a value of infinity |
+| `.infidiv` | division by infinity error | `2 / inf` | dividing any *valid* value by a value of infinity |
 
-### `efflux`
+### `uniflux`
+
+Various errors.
 
 | error | description | example | source |
 | :---- | :---------- | :------ | :----- |
+| `.type` | invalid type | `"sup" / 2` | argument of an invalid type |
+| `.value` | unsuitable value | "sup" * 1.2 | argument of an unsuitable value |
+| `.logic` | invalid logic | "sup" > 2 | |
+
+### `efflux`
+
+...
+
+| error | description | example | source |
+| :---- | :---------- | :------ | :----- |
+
 
 ### `conflux`
 
@@ -85,6 +99,7 @@ A generic interpreter error.
 | :---- | :---------- | :------ | :----- |
 | `.exit` | an unexpected exit call | `...` | |
 | `.interrupt` | a system interrupt | `...` | |
+| `.void` | not implemented | `evoke efflux.void` | indicates that a feature has not yet been implemented |
 
 ## `dux`
 
