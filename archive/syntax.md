@@ -42,20 +42,20 @@ Special Data Representation Access Module
 
 ### Seritax 3.10
 
-...
+The standard Supcode syntax – clean, clear and concise. 
 
 ### Veritax 3.4
 
-...
+The fully expanded syntax, straying towards English, highlighting the exact actions of code.
 
 ### Arcenax 2.9
 
-...
+The efficient syntax for experts, with abbreviations and simplifyzations.
 
 ### Qtinax 1.7
 
-...
+Condensed and concise, for ultimate efficiency.
 
 ### Resnax 1.6
 
-...
+A special syntax specifically designed for the Supcode RES theme.
