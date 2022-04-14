@@ -94,6 +94,9 @@ Text parsing and comprehension.
 ### `devex`
 Various developer and debugging tools.
 
+### `discord`
+An extension for interacting with the Discord API.
+
 ### `excex`
 Extension tools and management.
 
@@ -123,4 +126,58 @@ Hacking and remote access.
 
 ## Extextensions
 
+### `cordycex`
+
 ...
+
+### `corvex`
+
+...
+
+### `dragonex`
+
+...
+
+### `licerex`
+
+Extensive and advanced text parsing and extension.
+
+#### See Also
+[`cerex`](#cerex)
+
+### `ophiex`
+
+...
+
+### `qortex`
+
+Extensive and advanced application operation, manipulation and automation.
+
+#### See Also
+[`cortex`](#cortex)
+
+### `rendex`
+Advanced rendering, including beyond 3 dimensions.
+
+#### See Also
+[`tracix`](#tracix)
+
+### `tentuex`
+
+...
+
+### `tplex`
+
+...
+
+### `vetex`
+
+...
+
+### `vortex`
+
+Extensive and advanced matrix manipulation.
+
+### `xyrex`
+
+The ultimate extension for Supcode.
