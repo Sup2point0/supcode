@@ -8,7 +8,7 @@ WIP.
 
 ### Nova
 
-...
+The official Supcode 5.0 theme.
 
 ### Scratch
 
