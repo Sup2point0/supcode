@@ -1,6 +1,6 @@
 # Colour Configurations
 
-WIP
+WIP.
 
 ## Inbuilt
 
@@ -8,7 +8,7 @@ WIP
 
 ### supcode Nova
 
-...
+The official Supcode syntax highlighting colour configuration.
 
 ### supcode from Scratch
 
