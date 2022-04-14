@@ -4,7 +4,7 @@ Supcode 5.0 has 3 syntax flavours, each offering dramatically different styles, 
 
 ## `utinax`
 
-| <td colspan="2"> `Utinax One` |
+| <td colspan="2"> `Utinax One` ||
 | :-- | :-- |
 | description | The standard Supcode syntax.
 | style | standard |
@@ -34,7 +34,7 @@ create struct 'demo' {
 
 ## `veritinax`
 
-| <td colspan="2"> `Veritinax 1.0` |
+| <td colspan="2"> `Veritinax 1.0` ||
 | :-- | :-- |
 | description | Full, expanded syntax closely resembling English.
 | style | expanded |
@@ -43,7 +43,7 @@ create struct 'demo' {
 
 ## `resinax`
 
-| <td colspan="2"> `Resinax 1.1` |
+| <td colspan="2"> `Resinax 1.1` ||
 | :-- | :-- |
 | description | Highly condensed syntax not intended for human readability.
 | style | condensed |
