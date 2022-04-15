@@ -1,9 +1,9 @@
-spec code { ver = 5.3 | syn = utinax | sty = mixed }
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
 
 
-on event() {{
+on event('event') {{
   define callback(ctx, (info)s) [(option)s] {
-    sys.log((info)s)
+    ...
   }
 }}
 
@@ -19,9 +19,11 @@ on event('test') {{
 
 invoke test
 
+await invoke test
+
 
 on event(ctx, (info)s, (option)s) {{
-  sys.log((info)s)
+  ...
 }}
 
 on start {{
@@ -35,5 +37,3 @@ on sys.out("sup") {{
 on event 'test' {{
   sys.out("sup")
 }}
-
-invoke test
