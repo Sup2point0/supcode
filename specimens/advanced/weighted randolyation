@@ -1,0 +1,11 @@
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+
+set 'loot' = "generic" / 20, "rare" / 5, "epic" / 3, "legendary" / 1
+sys.out(ran(loot)[opt])
+
+set list(loot)[weighted] = (
+  "sup" / 2,
+  "nova" / 7,
+  "shard" / 13,
+)
