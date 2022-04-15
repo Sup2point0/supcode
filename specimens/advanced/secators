@@ -1,29 +1,29 @@
-<supcode>
-  <spec[ver = 5.3 | syn = utinax | sty = secated]>
+< supcode >
+  < spec[ver = 5.3 | syn = utinax | sty = secated] >
 
-    <sec 'setup'>
+    < sec 'setup' >
       <->
-        <class('test')[var]>
+        < class('test')[var] >
       <->
-        <sec[set | class = test]>
+        < sec[set | class = test] >
           state = true
           score = 0
           time = 0.0
-        </sec>
+        < /sec >
       <->
-    </sec>
+    < /sec >
 
-    <sec 'main'>
+    < sec 'main' >
       <->
-        <func>
+        < func >
           define secyze(ctx = none) [(option)s] {
             func.out()
           }
-        </func>
+        < /func >
       <->
         secyze()
       <->
-    </sec>
+    < /sec >
 
-  </spec>
-</supcode>
+  < /spec >
+< /supcode >
