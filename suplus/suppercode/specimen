@@ -1,0 +1,27 @@
+{=== suppercode specimen ===}
+
+\{
+  document info
+\}
+
+[=== section ===]
+
+\\ heading \\
+create struct 'supper' {
+  \[
+    section info
+  \]
+  
+  [== subsection ==]
+  
+  \ subheading \
+  on supper.create(ctx, state) {
+    \( caption
+    \)
+    
+    set self.'state' = state \#0
+    \ comment
+  }
+  
+  \#0 = footnote
+}
