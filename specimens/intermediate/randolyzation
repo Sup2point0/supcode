@@ -1,9 +1,12 @@
-spec code { ver = 5.3 | syn = utinax | sty = mixed }
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
 
 
 set 'i' = random(1~10)
 alt i + ran(-10, 10)
 
 set 'stuff' = "apricots", "bananas", "cherries", "dragonfruit"
-set 'pick' = random(stuff)[opt]
-sys.out("let's have some `pick` today")
+sys.out(random(stuff)[opt])
+sys.out(ran(stuff)[opt, 2]
+
+set 'files' = "sup.sc", "nova.sc", "shard.sc"
+sys.out(shuffle(files))
