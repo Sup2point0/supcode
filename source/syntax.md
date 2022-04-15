@@ -4,12 +4,27 @@ Supcode 5.0 has 3 syntax flavours, each offering dramatically different styles, 
 
 ## `utinax`
 
-| <td colspan="2"> `Utinax One` ||
-| :-- | :-- |
-| description | The standard Supcode syntax.
-| style | standard |
-| latest revision | `one` |
-| updates | Utinax remains largely unchanged from its initial release. |
+<table>
+  <tr>
+    <th colspan="2" > <h3><code> Utinax One </code></h3> </th>
+  </tr>
+  <tr>
+    <td> description </td>
+    <td> The standard Supcode syntax. </td>
+  </tr>
+  <tr>
+    <td> style </td>
+    <td> standard </td>
+  </tr>
+  <tr>
+    <td> latest revision </td>
+    <td> <code> one </code> </td>
+  </tr>
+  <tr>
+    <td> updates </td>
+    <td> Utinax remains largely unchanged from its initial release. </td>
+  </tr>
+</table>
 
 ### Specimen
 
