@@ -3,8 +3,10 @@
 
 spec code { ver = 5.4 | syn = utinax | sty = stan }
 
+enable sys
 
-set 'data' = [ "sup" = "4761" ]
+
+set 'data' = [ 'sup' = "4761" ]
 set 'username' = none
 set 'password' = none
 
@@ -25,7 +27,7 @@ on start loop forever {{
   if action = "login" {
     loop until state {
       set username = prompt.ask("enter a username")
-      if username in database.keys {
+      if sys.key(username) in database.keys {
         set state = true
       else |
         prompt.out("username not found")
@@ -34,7 +36,7 @@ on start loop forever {{
     
     loop until state {
       set password = prompt.ask("enter the password")
-      if password = data#username {
+      if password = data#sys.key(username) {
         set state = true
       else |
         prompt.out("incorrect password")
@@ -45,7 +47,7 @@ on start loop forever {{
   elif action = "create" |
     loop until state {
       set username = prompt.out("enter a username")
-      if username in database.keys {
+      if sys.key(username) in database.keys {
         prompt.out("username already exists")
       else |
         set state = true
@@ -59,7 +61,7 @@ on start loop forever {{
       else |
         set state = true
     } set state = false
-    set data#username = password
+    set data#sys.key(username) = password
     prompt.out("account successfully created")
 
   elif action = "exit" |
