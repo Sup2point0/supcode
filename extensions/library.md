@@ -4,6 +4,8 @@ An assortment of extensions available for Supcode.
 
 ## Ixtensions
 
+Internal extensions that are inbuilt with Supcode. These can be utilyzed directly with `activate`.
+
 ### `audix`
 Sounds and audio.
 
@@ -63,7 +65,7 @@ Concise but extensive text markup, including Markdown.
 ### `sonix`
 JSON functionality.
 
-### `stadex`
+### [`stadex`](ixtensions/stadex)
 The supcode *stage*, an inbuilt playground for creating anything, but in particular games.
 
 #### Subextensions
@@ -94,7 +96,7 @@ Text parsing and comprehension.
 ### `devex`
 Various developer and debugging tools.
 
-### `discord`
+### [`discord`](endextensions/discord)
 An extension for interacting with the Discord API.
 
 ### `excex`
