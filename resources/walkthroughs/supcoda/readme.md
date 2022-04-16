@@ -4,13 +4,13 @@ Welcome to *supcoda*, the new updated full walkthrough to Supcode, and the succe
 
 ## Contents
 
-- The Basics
-  - Comments
-- Intermediate
-- Advanced
-- Experienced
-- Miscellaneous
-- Projects
+- [The Basics](basics)
+  - [Comments](basics/comments.md)
+- [Intermediate](intermediate)
+- [Advanced](advanced)
+- [Experienced](experienced)
+- [Miscellaneous](miscellaneous)
+- [Projects](projects)
 
 ## Extended
 
