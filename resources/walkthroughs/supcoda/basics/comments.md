@@ -31,7 +31,9 @@ To place it between elements of code, a second `\` can be used to end the commen
 func("sup", 2.0 \ like so \ , true)
 ```
 
-However, this is highly discouraged, as it leaves the code quite unreadable. Its intended use is for single-line Supcode, although even then comments are rarely used, since the code is not intended for human reading.
+However, this is highly discouraged, as it leaves the code quite unreadable.
+
+> Its intended use is for single-line Supcode. Although, even then comments are rarely used, since the code is not intended for human reading.
 
 Comments can span multiple lines if necessary. This is denoted by double `\` both at the start and end of the comment segment.
 
@@ -41,7 +43,7 @@ spanning multiple lines
 look like this \\
 ```
 
-Their main use is for opening information at the top of a document, or commenting out entire chunks of code at once.
+Their main use is for opening information at the top of a section, or commenting out entire chunks of code at once.
 
 ```
 \\
@@ -99,7 +101,7 @@ define func(some) {
 }
 ```
 
-Here, the chunk originally within the try segment has been isolated, so that it will output its error rather than silently exiting the function.
+Here, the code originally within the try segment has been isolated, so that it will output its error rather than silently exiting the function.
 
 ---
 
