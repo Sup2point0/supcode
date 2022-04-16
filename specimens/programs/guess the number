@@ -1,7 +1,7 @@
 \ guess the number
 \ supcode specimen
 
-spec code { ver = 5.3 | syn = utinax | sty = stan }
+spec code { ver = 5.4 | syn = utinax | sty = stan }
 
 
 set 'state' = none
@@ -34,7 +34,7 @@ on start {{
   }
 
   if state {
-    prompt.out("correct! you win!")
+    prompt.out("correct, you win!")
   else |
     prompt.out("ran out of guesses!")
   }
