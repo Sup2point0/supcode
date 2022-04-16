@@ -6,10 +6,10 @@ An endorsed supcode extension for interacting with the Discord API, specifically
 
 ### `slash`
 
-Slash command implementation and functionality.
+Slash commands implementation and functionality.
 
 ## Intrinsics
 
 ### `disflux`
 
-Errors.
+Discord-specific errors.
