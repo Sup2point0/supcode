@@ -1,8 +1,8 @@
-\ sup yall
+\ sup world
 \ supcode specimen
 
 spec code {
-  | lan = sup | ver = 5.3
+  | lan = sup | ver = 5.4
   | syn = utinax | rev = one
 }
 
@@ -10,6 +10,6 @@ spec code {
 on start {{
 
   prompt.open()
-  prompt.out("sup yall!")
+  prompt.out("sup world!")
 
 }}
