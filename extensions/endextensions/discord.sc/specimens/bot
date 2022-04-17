@@ -1,18 +1,18 @@
-\ advanced discord bot
+\ extensive discord bot
 \ discord.sc specimen
 
-spec code { ver = 5.3 | syn = utinax | sty = stan }
-
+spec code { ver = 5.4 | syn = utinax | sty = stan }
 
 enable sys
+locate discord { ver = 1.2 }
 
-locate, activate discord
+active discord
 activate slash in discord
 
 activate securex
 
 
-create discord.bot(demo) [ key = securex.redact("token") | intents = all ] {
+create discord.bot(demo) [ key = securex.redact('token') | intents = all ] {
   let bot.commands.prefix = "."
 }
 
@@ -22,32 +22,48 @@ on demo.connect {{
 
 create discord.command {
   define bot.test(ctx) {
-    await ctx.out("sup")
+    ctx.out("sup")
   }
 }
 
-create discord.command 'x2' {
-  define bot.x2(ctx, number) {
-    await ctx.reply(number * 2)
+create discord.command 'sup' {
+  define bot.testing(ctx, par) {
+    ctx.reply("sup `par`")[mention = false]
   }
 }
 
-create discord.slash.command [ desc = "help and info" ] {
-  define bot.help(ctx) {
-    await ctx.respond() [ embed = discord.embed() {
-      let head.title = "Help"
-      let main.colour = 0x4090f1
-      let main.text = """
-        A demonstrative advanced Discord bot, showcasing all of the capabilities of discord.sc
+create discord.command 'complex' {
+  define bot.multi(ctx, str(par1), int(par2), bool(par3)) {
+    ...
+  }
+}
+
+define bot.'help'(ctx) {
+  ctx.reply() [ embed = discord.embed() {
+    let head.title = "Help"
+    let body.col = 0x4090f1
+    let body.text = "A demonstrative advanced Discord bot, showcasing all of the capabilities of discord.sc"
+    let foot.text = "Requested by `ctx.user`",
+    let foot.time = ctx.time
+  }]
+}
+
+create discord.slash.command 'commands' [ desc = "view a list of available commands" ] {
+  define bot.view(ctx) {
+    ctx.respond() [ embed = discord.embed() {
+      let head.title = "Commands"
+      let body.col = 0xff0090
+      let body.text = """
+        ...
       """
-      let foot.text = "Requested by `ctx.message.sender`",
+      let foot.text = "Showing `body.text.len[line]` commands"
     }]
   }
 }
 
 create discord.slash.command [ desc = "get profile picture of a user in the server" ] {
   define bot.pfp(ctx, discord.member(user)) {
-    await ctx.respond() [ attach = sys.file(user.avatar.url) | ephemeral = true ]
+    ctx.respond() [ attach = sys.file(user.avatar.url) | ephemeral = true ]
   }
 }
 
@@ -58,13 +74,21 @@ create discord.slash.command [ desc = "" ] {
 }
 
 on discord.message.send(ctx) {{
-  sys.log(ctx.message.content)
+  sys.log("`ctx.message.sender` said `ctx.message.content` in `ctx.channel.name`")
   await demo.process(ctx)
 }}
 
-on discord.interaction(ctx) {{
-  sys.log(interaction.data)
-  await demo.slash.process(ctx)
+on discord.command.call(ctx) {{
+  sys.log("`ctx.user` used `ctx.command.name`")
+}}
+
+on discord.interaction.call(ctx) {{
+  sys.log(ctx.data)
+  
+  if ctx.valid {
+    sys.log("`ctx.user` used `ctx.command.name`")
+    await demo.slash.process(ctx)
+  }
 }}
 
 
