@@ -1,14 +1,17 @@
-spec code { ver = 5.3 | syn = utinax | sty = full }
-
+spec code { ver = 5.4 | syn = utinax | sty = full }
 
 enable sys
+
 
 sys.out(sys.loc.folder.name)
 sys.log(sys.loc.path.len)
 
-sys.open(sys.file(test.exe))
+sys.open(sys.file('test.exe'))
+create sys.file('test.txt') in sys.path('/tests')
 
-evoke sys.error(afflux)
+if sys.operator('+') {
+  evoke sys.error('afflux')
+}
 
 
 sys.exit()
