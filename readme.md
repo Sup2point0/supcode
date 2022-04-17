@@ -60,7 +60,7 @@ Supcode is a general-purpose text-based programming language created by Sup#2.0 
   </tr>
   <tr>
     <td> Filename extensions </td>
-    <td> <code>.sc</code>, <code>`.sc5`</code>, <code>`.scx`</code> </td>
+    <td> <code>.sc</code>, <code>.sc5</code>, <code>.scx</code> </td>
   </tr>
   <tr>
     <td> Other extensions </td>
