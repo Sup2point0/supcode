@@ -7,8 +7,8 @@ spec code {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
     {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
-  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
-  | style, sty, styl = {full, concise, {standard, stan}, mixed}
+  | endpoint, end, endp = {{standard, stan, stand}, str('indicator')}
+  | style, sty, styl = {full, {standard, stan}, concise, mixed}
 }
 
 spec syntax {
@@ -18,7 +18,7 @@ spec syntax {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
     {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
-  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
+  | endpoint, end, endp = {{standard, stan, stand}, str('indicator')}
   | style, sty, styl = {full, concise, {standard, stan}, mixed}
 }
 
@@ -39,8 +39,8 @@ spec run {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
     {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
-  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
-  | out, log, sys = sys, sys.loc(location)
+  | endpoint, end, endp = {{standard, stan, stand}, str('indicator')}
+  | out, log, sys = sys, sys.loc('location')
   | int(indent, ind, indt, dent) = 3
   | bool(significant, notable, note, sigf) = true
   | spaces, space, spaces = {none,
@@ -55,6 +55,6 @@ spec run {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
     {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
-  | endpoint, end, endp = {{standard, stan, stand}, str(indicator)}
-  | out, log, sys = sys, sys.loc(location)
+  | endpoint, end, endp = {{standard, stan, stand}, str('indicator')}
+  | out, log, sys = sys, sys.loc('location')
 }
