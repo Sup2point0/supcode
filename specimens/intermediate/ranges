@@ -1,15 +1,15 @@
-spec code { ver = 5.3 | syn = utinax | sty = full }
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
 
 
-loop for 'idx' from 1 to 10 {
+set list('r') = { from 1 to 10 }
+
+loop for i from 2 to 20 by 2 {
   sys.out(i ^ 2)
 }
 
-set list('a') = { from 2 to 20 by 2 }
 
+set list('s') = 1~100
 
-loop for i in 1~100 {
+loop for i in 0~100~4 {
   sys.out(sqrt(i))
 }
-
-set list('s') = 0~100~5
