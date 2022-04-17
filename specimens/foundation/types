@@ -1,15 +1,19 @@
 spec code { ver = 5.4 | syn = utinax | sty = full }
 
 
+set 'var' = none
+
 set 'string' = "sup"
 set 'str' = "code"
 
-set 'integer' = 0
-set 'numeric' = 2.0
-set var('numc')[dp = 2] = 3.14
+set 'numeric' = 0
+set 'integer' = 1
+set 'int' = -1
+set numeric = 2.0
+set numc('pi')[dp = 2] = 3.14
 
 set 'boolean' = true
-set 'boolean' = false
+set boolean = false
 
 
 set 'list' = "sup", 2.0, true
