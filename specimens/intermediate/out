@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax | sty = stan }
+spec code { ver = 5.4 | syn = utinax | sty = stan }
 
 
 sys.out("sup")
@@ -10,11 +10,11 @@ define 'test'(value) {
   func.out(value * 2)
 }
 
-sys.out(
-  loop for i in 1~20 {
-    if i > 2 {
+set 'out' = {
+  loop(20) {
+    if loop.count > 2 {
       loop.out(i)
       loop.exit()
     }
   }
-)
+}
