@@ -1,0 +1,20 @@
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+activate constructix
+
+
+construct sequence with variable, iteratior {
+  let variable = func(iterator)
+
+  if cond add variable for {
+    increment iterator from start to stop by step
+  }
+}
+
+construct sequence with variable {
+  add func(variable) for {
+    increment variable in start~stop~step
+  }
+}
+
+construct() { func(variable) || variable in range | cond }
