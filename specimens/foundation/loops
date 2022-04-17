@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax }
+spec code { ver = 5.4 | syn = utinax | sty = full }
 
 
 loop(3) {
@@ -6,7 +6,7 @@ loop(3) {
 }
 
 set 's' = 0
-loop() [time = 0.02] {
+loop() [ time = 0.02 ] {
   alt s + 1
 }
 
@@ -28,8 +28,18 @@ set 'src' = "sip", "dip", "nip", "kip"
 loop for item in src {
   sys.out(item)
 }
-loop for 'some' in src {
-  sys.out(loop.count + ": " + some)
+loop for 'thing' in src {
+  sys.out(loop.count ": " some)
+}
+
+set src = [ 'sup' = 2.0 | 'nova' = 6.9 ]
+loop for key, value in src {
+  sys.out(key " = " value)
+}
+loop for 'thing', 'content' in src {
+  if src:content = thing {
+    sys.out("first")
+  }
 }
 
 loop forever {
