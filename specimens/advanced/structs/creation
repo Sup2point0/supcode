@@ -1,0 +1,26 @@
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
+
+
+create struct 'name' {
+  on name.create(context, (option)s) [(attribute)s] {
+    set name.'var1' = (option)s#1
+    set name.'var2' = (option)s#2
+    loop for key, value in (attribute)s {
+      set name.var(key) = value
+    }
+  }
+}
+
+
+create struct('name') {
+  define self.create(context, (option)s) [(attribute)s] {
+    set self.'var1' = (option)s#1
+    set self.'var2' = (option)s#2
+    loop for key, value in (attribute)s {
+      set self.var(key) = value
+    }
+  }
+}
+
+
+create name('test', 1.0, 2.0)
