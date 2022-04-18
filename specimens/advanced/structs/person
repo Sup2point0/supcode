@@ -1,0 +1,41 @@
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+
+create struct 'person' {
+  on person.create(str('name')) [
+    | int('age')
+    | str('nationality')
+    | list('languages')[str]
+    | colour {
+      | skin = none
+      | hair = none
+      | eyes = none
+    }
+    | favourite { (fav)s = let {} }
+    | (trait)s = let {}
+  ] {
+    set person.'name' = name
+    set person.'age' = age
+
+    set person.'colour'.'skin' = colour.skin
+    set person.'colour'.'hair' = colour.hair
+    set person.'colour'.'eyes' = colour.eyes
+
+    set person.'traits' = (trait)s
+  }
+}
+
+
+create person 'Sup#2.0' [
+  | age = 2
+  | nationality = "Antarctican"
+  | languages = "supcode", "suppercode", "Antarctican English"
+  |
+  | colour.skin = "purple"
+  | colour.hair = "lilac"
+  | colour.eyes = "white"
+  | favourite.color = 0x4090f1
+  | favourite.lang = "supcode"
+  |
+  | spellingPreference = "Antarctican English"
+]
