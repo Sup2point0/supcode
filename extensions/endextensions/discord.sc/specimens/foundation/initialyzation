@@ -1,19 +1,13 @@
-spec code { ver = 5.3 | syn = utinax | sty = mixed }
+spec code { ver = 5.4 | syn = utinax | sty = stan }
 
-
+locate discord { ver = 1.2 }
 activate discord
 
 
-create discord.client(name) [
-  | key = "token"
+create discord.bot 'name' [
+  | token = "token"
   | intents = all
+  | prefix = "prefix"
 ]
-
-name.start()
-
-
-create discord.bot 'name' [ key = "token" | intents = all ] {
-  let bot.commands.prefix = "."
-}
 
 name.start()
