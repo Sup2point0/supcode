@@ -12,9 +12,11 @@ activate slash in discord
 activate securex
 
 
-create discord.bot(demo) [ key = securex.redact('token') | intents = all ] {
-  let bot.commands.prefix = "."
-}
+create discord.bot(demo) [
+  | token = securex.redact('token')
+  | intents = all
+  | prefix = "."
+]
 
 on demo.connect {{
   sys.out("connected")
@@ -78,11 +80,11 @@ on discord.message.send(ctx) {{
   await demo.process(ctx)
 }}
 
-on discord.command.call(ctx) {{
+on demo.command.call(ctx) {{
   sys.log("`ctx.user` used `ctx.command.name`")
 }}
 
-on discord.interaction.call(ctx) {{
+on demo.interaction.call(ctx) {{
   sys.log(ctx.data)
   
   if ctx.valid {
