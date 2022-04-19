@@ -1,0 +1,17 @@
+spec code { ver = 5.4 | syn = utinax | sty = mixed }
+
+
+create struct 'test' {
+  define test.'function'(option) {
+    ...
+  }
+}
+
+
+create struct('test') {
+  create func [struct] {
+    define self.function(option) {
+      ...
+    }
+  }
+}
