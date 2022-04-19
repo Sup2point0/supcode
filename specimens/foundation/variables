@@ -1,14 +1,14 @@
-spec code { ver = 5.3 | syn = utinax | sty = mixed }
+spec code { ver = 5.4 | syn = utinax | sty = vary }
 
 
-set 'myvar' = "sup"
+set 'testVar' = "sup"
 
 set var('s') = 0
 alt s + 2
 
-create var(v)
+create var('v')
 set v = true
 
 set 'x', 'y' = none
 set x = "sup"; y = "code"
-sys.out(x + y)
+set x = y; y = x
