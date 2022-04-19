@@ -1,25 +1,29 @@
 spec code { ver = 5.3 | syn = utinax | sty = full }
 
 
-load afile
-afile.afunc(afile.avar)
+load otherFile
+otherFile.testFunc()
+set 'var' = otherFile.testVar
 
-load afolder
-afolder.afile.afunc(afolder.afile.avar)
+load otherFolder
+otherFolder.otherFile.testFunc()
+set var = otherFolder.otherFile.testVar
 
-load afolder.afile
-afile.afunc(afile.avar)
-
-
-prime afile
-afunc(avar)
-
-prime afolder
-afile.afunc(afile.avar)
-
-prime afolder.afile
-afunc(avar)
+load otherFolder.otherFile
+otherFile.testFunc()
+set var = otherFile.testVar
 
 
-prime astruct in afile
-create astruct()
+prime otherFile
+testFunc(testVar)
+
+prime otherFolder
+otherFile.testFunc()
+set var = otherFile.testVar
+
+prime otherFolder.otherFile
+testFunc(testVar)
+
+
+prime testStruct in otherFile
+create testStruct('test')
