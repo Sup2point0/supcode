@@ -1,1 +1,1 @@
-<sc> <res> <spec[ver = 5.3]> create struct 'single' { on single.create(ctx) [(option)s] { if ctx { set single.info = ctx.info } | if ctx.name { set single.name = ctx.name || else | set single.name = none } } } | create single('sup') </spec> </res> </sc>
+<sc> <res> <spec[ver = 5.4]> create struct 'single' { on single.create(ctx, info = none) { if info { set single.'info' = info | set single.'full' = true || else | set single.'info' = dict() | set single.'full' = false } } } | create single('sup') </spec> </res> </sc>
