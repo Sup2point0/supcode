@@ -12,23 +12,23 @@ The official Supcode 5.0 theme.
 
 ### Scratch
 
-...
+The Scratch GUI.
 
 ### Lite
 
-...
+Light mode.
 
 ### Nite
 
-...
+Dark mode.
 
 ### Midnite
 
-...
+Super dark mode.
 
 ### Nion
 
-...
+Neon dark mode.
 
 
 ## Library
@@ -37,7 +37,7 @@ The official Supcode 5.0 theme.
 
 ### Clean
 
-...
+A simple and clean lightweight UI.
 
 ### Slate
 
@@ -53,7 +53,7 @@ The official Supcode 5.0 theme.
 
 ### Antarctica
 
-...
+Venture into the icy depths of Antarctica.
 
 ### Metallion
 
@@ -73,7 +73,7 @@ The official Supcode 5.0 theme.
 
 ### RESNITE
 
-...
+Fall into the void of Resinax, with super compact UI for efficiency and little wasted space.
 
 ### Slite
 
