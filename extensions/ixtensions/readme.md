@@ -62,7 +62,7 @@ Concise but extensive text markup, including Markdown.
 ## `sonix`
 JSON functionality.
 
-## [`stadex`](ixtensions/stadex)
+## [`stadex`](stadex)
 The supcode *stage*, an inbuilt playground for creating anything, but in particular games.
 
 ### Subextensions
