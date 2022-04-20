@@ -62,5 +62,5 @@ create struct 'demo' {
 | :-- | :-- |
 | description | Highly condensed syntax not intended for human readability.
 | style | condensed |
-| latest revision | `1.1` |
+| latest revision | `1.2` |
 | updates | Many newly added symbols and shortcuts. |
