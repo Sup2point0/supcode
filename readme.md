@@ -7,7 +7,7 @@ Supcode is a general-purpose text-based programming language created by Sup#2.0 
     <th colspan="2"> <h3> supcode </h3> </td>
   </tr>
   <tr>
-    <td> Name </td>
+    <td> Official name </td>
     <td> supcode </td>
   </tr>
   <tr>
