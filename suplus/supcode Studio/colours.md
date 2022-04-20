@@ -68,8 +68,8 @@ Metallic, harsh and high-contrast.
 Spectacular out-of-this-world colours, like a supernova before your eyes.
 
 #### Complementary Theme
-[Galactinite](themes.md#galactinite
+[Galactinite](themes.md#galactinite)
 
 ### RESNOX
 
-...
+Optilyzed for Resinax.
