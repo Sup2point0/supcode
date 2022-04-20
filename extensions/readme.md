@@ -9,14 +9,14 @@ An assortment of extensions available for Supcode.
  - `cloudex`
  - `complex`
  - `connectix`
- - `constructix`
+ - [`constructix`](https://github.com/Sup2point0/supcode/tree/sup/extensions/ixtensions/constructix)
  - `datix`
  - `geometrix`
  - `graphix`
  - `lattrix`
  - `notix`
  - `sonix`
- - `stadex`
+ - [`stadex`](https://github.com/Sup2point0/supcode/tree/sup/extensions/ixtensions/stadex)
  - `tracix`
 
 ## Endextensions
@@ -25,7 +25,7 @@ An assortment of extensions available for Supcode.
  - `campex`
  - `cerex`
  - `devex`
- - [`discord`](endextensions/discord)
+ - [`discord`](https://github.com/Sup2point0/discord.sc)
  - `excex`
  - `genex`
  - `jedex`
