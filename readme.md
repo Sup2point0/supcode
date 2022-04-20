@@ -100,7 +100,7 @@ Supcode is a general-purpose text-based programming language created by Sup#2.0 
 
 Supcode is designed to be intuitive, concise and readable. It serves as a bridge between the block-focused environment of Scratch and proper text-based programming languages, maintaining most of the key concepts and features while transferring the structure and syntax into a text-based format, and opening up room for much more powerful and complex programs.
 
-Supcode comes with powerful customizability and convenient shortcuts. Like Scratch, there is an extensive assortment of [extensions](extensions/library.md), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialization and applications.
+Supcode comes with powerful customizability and convenient shortcuts. Like Scratch, there is an extensive assortment of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialization and applications.
 
 ### Files and Applications
 
