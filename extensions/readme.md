@@ -15,6 +15,7 @@ An assortment of extensions available for Supcode.
  - `graphix`
  - `lattrix`
  - `notix`
+ - `regix`
  - `sonix`
  - [`stadex`](https://github.com/Sup2point0/supcode/tree/sup/extensions/ixtensions/stadex)
  - `tracix`
