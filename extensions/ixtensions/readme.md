@@ -59,6 +59,9 @@ Lattices and matrixes.
 ## `notix`
 Concise but extensive text markup, including Markdown.
 
+## `regix`
+Regular expressions.
+
 ## `sonix`
 JSON functionality.
 
