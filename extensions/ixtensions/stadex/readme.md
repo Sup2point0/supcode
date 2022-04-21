@@ -25,3 +25,9 @@ Pen rendering.
 ### `stadux`
 
 Stadex-related errors.
+
+## Specimen
+
+```
+...
+```
