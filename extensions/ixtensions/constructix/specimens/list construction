@@ -1,9 +1,9 @@
 spec code { ver = 5.4 | syn = utinax | sty = stan }
 
-activate constructix
+activate constructix { ver = 2.0 }
 
 
-construct sequence with variable, iteratior {
+construct sequence with variable, iterator {
   let variable = func(iterator)
 
   if cond add variable for {
@@ -13,7 +13,7 @@ construct sequence with variable, iteratior {
 
 construct sequence with variable {
   add func(variable) for {
-    increment variable in start~stop~step
+    increment variable over start~stop~step
   }
 }
 
