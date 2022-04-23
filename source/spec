@@ -1,20 +1,20 @@
 spec code {
-  | language, lan, lang = {sup, supper, suppy}
-  | numc(version, ver, vers)[ver] = 5.4
-  | syntax, syn, synt = {utinax, veritinax, resinax}
-  | revision, rev, revn = syntax {utinax: {one}, veritinax: {numc(1.1)[ver]}, resinax: {numc(1.4)[ver]}}
-  | interpreter, run, runl, intr = {
+  | pool(language, lan, lang) = {sup, supper, suppy}
+  | ver(version, ver, vers) = 5.4
+  | pool(syntax, syn, synt) = {utinax, veritinax, resinax}
+  | pool(revision, rev, revn) = syntax {utinax: {one}, veritinax: {numc(1.1)[ver]}, resinax: {numc(1.4)[ver]}}
+  | pool(interpreter, run, intr) = {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
     {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
-  | endpoint, end, endp = {{standard, stan, stand}, str('indicator')}
-  | style, sty, styl = {full, {standard, stan}, concise, mixed}
+  | opt(endpoint, end, endp) = {{standard, stan, stand}, str('indicator')}
+  | pool(style, sty, styl) = {full, {standard, stan}, concise, mixed}
 }
 
 spec syntax {
   | syntax, syn, synt = {utinax, veritinax, resinax}
   | revision, rev, revn = syntax {{utinax: {one}, veritinax: {numc(1.1)[ver]}, resinax: {numc(1.4)[ver]}}
-  | interpreter, run, runl, intr = {
+  | interpreter, run, intr = {
     {deravile, dvl, dera}, {tenqovile, tql, tenq}, {xendovile, xvl, xenv},
     {runvolt, rvt, runv}, {syvolt, svt, syvt},
   }
