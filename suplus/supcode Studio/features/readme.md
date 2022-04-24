@@ -1,5 +1,7 @@
 # supcode Studio Features
 
+This showcases the various features of supcode Studio.
+
 - [SupFlow](supflow.md)
 - [SupFill](supfill.md)
 - [DualShift](dualshift.md)
