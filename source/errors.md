@@ -35,7 +35,9 @@ A syntax error.
 
 | error | description | example | source |
 | :---- | :---------- | :------ | :----- |
-| `.openseg` | segment left unclosed | `if true { sys.out("sup")` | missing a bracket or any similar segment encloser | 
+| `synflux` | generic syntax error | `sup sup` | Evoked when no specific syntax error could be evoked.
+| `.unknown` | unrecognized syntax | `print(sup ==== )` | Unrecognized characters, symbols and/or programming language detected. Rarely evoked due to supcode’s extensive character support (through Resinax). |
+| `.openseg` | segment left unclosed | `if true { sys.out("sup")` | Missed a bracket or any similar segment encloser |
 
 ### `afflux`
 
