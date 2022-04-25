@@ -1,0 +1,17 @@
+\ fibonacci
+\ supcode specimen
+
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+
+create func {
+  define fibo(n) {
+    set 'x', 'y' = 1
+    loop(n) {
+      func.out(x)
+      set x, y = y, y + x
+    }
+  }
+}
+
+sys.out(fibo(20))
