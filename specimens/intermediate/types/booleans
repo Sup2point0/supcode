@@ -1,0 +1,20 @@
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+
+set 'c' = true
+set 'd' = false
+
+if c {
+  ...
+elif not d |
+  ...
+}
+
+alt toggle c
+alt toggle(c)
+
+set bool('s')[default] = false
+set bool('t')[default = false] = true
+alt toggle s
+alt reset s
+alt reset t
