@@ -6,7 +6,7 @@ spec code { ver = 5.4 | syn = utinax | sty = stan }
 enable sys
 
 
-set 'data' = [ 'sup' = "4761" ]
+set 'data' = ['sup' = "4761"]
 set 'username' = none
 set 'password' = none
 
