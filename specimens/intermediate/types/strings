@@ -3,12 +3,20 @@ spec code { ver = 5.4 | syn = utinax | sty = stan }
 
 set 'text' = "suppety sup"
 
-sys.out(text#1)
-sys.out(text#9~11)
-sys.out(case(text)[upper])
+sys.out(text)
+text#1
+text#9~11
 
-sys.out(split(text))
-sys.out(split(text)["p"])
+case(text)[upper]
+case(text)[title]
+
+strip(text)
+strip(text)[left]
+
+split(text)
+split(text)[white]
+split(text)["p"]
+
 
 set text = "sup", "pety", "sup"
 
