@@ -1,12 +1,12 @@
 spec code { ver = 5.4 | syn = utinax | sty = stan }
 
 
-set 'd' = ['one' = 1 | 'two' = 2]
-add ['three' = 3] to d
-alt d + ['four' = 4]
+set 'd' = ('one' = 1 | 'two' = 2)
+add ('three' = 3) to d
+alt d + ('four' = 4)
 
 set d#('five') = 5
-set d#6 = ['six' = 6]
+set d#6 = ('six' = 6)
 
 loop(d.len) {
   alt d#(loop.count)) - 1
