@@ -1,0 +1,15 @@
+\ factorial
+\ supcode specimen
+
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+
+create func {
+  define factorial(int('input')) {
+    if input = 1 {
+      func.out()
+    }
+
+    func.out(input * factorial(input - 1))
+  }
+}
