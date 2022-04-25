@@ -1,15 +1,15 @@
 spec code { ver = 5.4 | syn = utinax | sty = mixed }
 
 
-set list('r') = { from 1 to 10 }
+set span('r') = { from 1 to 10 }
 
 loop for i from 2 to 20 by 2 {
   sys.out(i ^ 2)
 }
 
 
-set list('s') = 1~100
+set span('s') = 1~100
 
-loop for i in 0~100~4 {
-  sys.out(sqrt(i))
+loop(0~100~4) {
+  sys.out(sqrt(loop.count))
 }
