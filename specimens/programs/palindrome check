@@ -1,0 +1,12 @@
+\ palindrome check
+\ supcode specimen
+
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+
+create func {
+  define checkPalin(input) {
+    input = str(input)
+    func.out(reverse(input) = input)
+  }
+}
