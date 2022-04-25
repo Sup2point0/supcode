@@ -1,0 +1,27 @@
+\ prime check
+\ supcode specimen
+
+
+create func {
+  define isPrime(int('input')) {
+    if input is not int {
+      func.out(false)
+    }
+    
+    if input =< 1 {
+      func.out(false)
+    elif input = 2 |
+      func.out(true)
+    elif input % 2 = 0 |
+      func.out(false)
+    }
+
+    loop(3~ floor(sqrt(input)) ~2) {
+      if input % loop.count = 0 {
+        func.out(false)
+      }
+    }
+
+    func.out(true)
+  }
+}
