@@ -1,0 +1,36 @@
+\ averages
+\ supcode Specimen
+
+spec code { ver = 5.4 | syn = utinax | sty = stan }
+
+
+create func {
+  define average((sequence)s) [pool('type') = {
+    {mode}, {median},
+    {'mean', arithmetic},
+    {geometric},
+  }] {
+
+    openif with type {
+
+      = mode |
+        ...
+
+      = median |
+        set 'seq' = ...
+        if seq.len % 2 > 0 {
+          set 'idx' = floor(seq.len / 2) + 1
+          func.out(seq#idx)
+        else |
+          set 'idx' = seq.len / 2
+          func.out( (seq#idx + seq#(idx+1)) / 2 )
+        }
+        
+      = mean |
+        ...
+        
+      = geometric |
+        ...
+
+    }
+}
