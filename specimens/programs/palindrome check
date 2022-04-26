@@ -7,6 +7,6 @@ spec code { ver = 5.5 | syn = utinax | sty = stan }
 create func {
   define palin(input) {
     input = str(input)
-    func.out(reverse(input) = input)
+    func.out({reverse(input) = input})
   }
 }

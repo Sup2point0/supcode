@@ -5,7 +5,7 @@ spec code { ver = 5.5 | syn = utinax | sty = stan }
 
 
 create func {
-  define fibo(n) {
+  define fibo(int('n')) {
     set 'x', 'y' = 1
     loop(n) {
       func.out(x)

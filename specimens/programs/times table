@@ -5,7 +5,7 @@ spec code { ver = 5.5 | syn = utinax | sty = stan }
 
 
 create func {
-  define 'timesTable'(n) {
+  define timesTable(int('n')) {
     sys.out("  " join(2~n)[" "])
 
     loop(2~n) {
