@@ -1,10 +1,10 @@
 ## Introduction
 
-Supcode is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://m.mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.4.
+Supcode is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://m.mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.5.
 
 <table>
   <tr>
-    <th colspan="2"> <h3> supcode 5.4 </h3> </td>
+    <th colspan="2"> <h3> supcode 5.5 </h3> </td>
   </tr>
   <tr>
     <td> Official name </td>
@@ -72,7 +72,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Other flavours </td>
-    <td> Veritinax 1.0, Resinax 1.2 </td>
+    <td> Veritinax 1.0, Resinax 1.6 </td>
   </tr>
   <tr>
     <td> Initial release </td>
@@ -92,19 +92,20 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Latest release </td>
-    <td> 5.4 (April 2022) </td>
+    <td> 5.5 (April 2022) </td>
   </tr>
 </table>
 
 ### Aims and Improvements
 
-Supcode is designed to be intuitive, concise and readable. It serves as a bridge between the block-focused environment of Scratch and proper text-based programming languages, maintaining most of the key concepts and features while transferring the structure and syntax into a text-based format, and opening up room for much more powerful and complex programs.
+Supcode is designed to be intuitive, concise and readable. It serves as a bridge between the block-based environment of Scratch and proper text-based programming languages, maintaining most of the key concepts and features while transferring the structure and syntax into a text-based format, and opening up room for much more powerful and complex programs.
 
 Supcode comes with powerful customizability and convenient shortcuts. Like Scratch, there is an extensive assortment of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialization and applications.
 
 ### Files and Applications
 
 Supcode files use the `.sc` filename extension. Often, this has a number following it to indicate the version number, i.e. `.sc4`, `.sc5`, etc. to allow for identification, version conversion and compatibility indication. Extensions use the `.scx` file extension. There are also a several other file extensions for highly specialized uses, such as `.scd` or `.scv`, though these are rarely used.
+
 
 ## Specimens
 
