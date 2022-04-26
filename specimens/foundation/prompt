@@ -23,7 +23,7 @@ prompt.open() [
 ]
 
 prompt.open() [
-  | size = sys.presets.fill[max]
+  | size = sys.inv.fill[max]
 ]
 
 prompt.load(sys.file('info.md'))
