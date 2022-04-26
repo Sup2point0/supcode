@@ -17,7 +17,7 @@ create func {
         ...
 
       = median |
-        set 'seq' = ...
+        set 'seq' = (sequence)s.items.items
         if seq.len % 2 > 0 {
           set 'idx' = floor(seq.len / 2) + 1
           func.out(seq#idx)
