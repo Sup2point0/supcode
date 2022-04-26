@@ -2,6 +2,7 @@
 
 A collection of all the inbuilt errors in Supcode.
 
+
 ## Contents
 
 `-flux`
@@ -17,6 +18,7 @@ A collection of all the inbuilt errors in Supcode.
 `-dux`
 - `redux`
 - `indux`
+- `condux`
 
 `-crux`
 - `accrux`
@@ -26,6 +28,7 @@ A collection of all the inbuilt errors in Supcode.
 - `caltrux`
 - `cinatrux`
 - `cicatrux`
+
 
 ## `flux`
 
@@ -103,13 +106,16 @@ A generic interpreter error.
 | `.interrupt` | a system interrupt | `...` | |
 | `.void` | not implemented | `evoke efflux.void` | indicates that a feature has not yet been implemented |
 
+
 ## `dux`
 
 ...
 
+
 ## `crux`
 
 ...
+
 
 ## `trux`
 

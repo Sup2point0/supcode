@@ -2,6 +2,7 @@
 
 Supcode 5.0 has 3 syntax flavours, each offering dramatically different styles, and useful for different applications.
 
+
 ## `utinax`
 
 <table>
@@ -30,7 +31,7 @@ Supcode 5.0 has 3 syntax flavours, each offering dramatically different styles, 
 
 ```
 spec code {
-  | lan = sup | ver = 5.0
+  | lan = sup | ver = 5
   | syn = utinax | rev = one
 }
 
@@ -47,20 +48,52 @@ create struct 'demo' {
 < /utinax >
 ```
 
+
 ## `veritinax`
 
-| <td colspan="2"> `Veritinax 1.0` ||
-| :-- | :-- |
-| description | Full, expanded syntax closely resembling English.
-| style | expanded |
-| latest revision | `1.0` |
-| updates | ... |
+<table>
+  <tr>
+    <th colspan="2" > <h3><code> Veritinax One </code></h3> </th>
+  </tr>
+  <tr>
+    <td> description </td>
+    <td> Full, expanded syntax closely resembling English. </td>
+  </tr>
+  <tr>
+    <td> style </td>
+    <td> expanded </td>
+  </tr>
+  <tr>
+    <td> latest revision </td>
+    <td> <code> 1.1 </code> </td>
+  </tr>
+  <tr>
+    <td> updates </td>
+    <td>  </td>
+  </tr>
+</table>
+
 
 ## `resinax`
 
-| <td colspan="2"> `Resinax 1.1` ||
-| :-- | :-- |
-| description | Highly condensed syntax not intended for human readability.
-| style | condensed |
-| latest revision | `1.2` |
-| updates | Many newly added symbols and shortcuts. |
+<table>
+  <tr>
+    <th colspan="2" > <h3><code> Resinax One </code></h3> </th>
+  </tr>
+  <tr>
+    <td> description </td>
+    <td> Highly condensed syntax not intended for human readability. </td>
+  </tr>
+  <tr>
+    <td> style </td>
+    <td> condensed </td>
+  </tr>
+  <tr>
+    <td> latest revision </td>
+    <td> <code> 1.6 </code> </td>
+  </tr>
+  <tr>
+    <td> updates </td>
+    <td> Many newly added symbols and shortcuts. </td>
+  </tr>
+</table>
