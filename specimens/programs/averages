@@ -14,7 +14,7 @@ create func {
     openif with type {
 
       = mode |
-        ...
+        set 'seq' = (sequence)s.items.items
 
       = median |
         set 'seq' = (sequence)s.items.items
