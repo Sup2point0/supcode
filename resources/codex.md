@@ -2,6 +2,7 @@
 
 An extensive guide to the general nomenclature of Supcode. For terminology (which differs), see the [legend](legend.md).
 
+
 ## Suffixes
 
 In general, you can infer what a name refers to by its suffix. As with anything, there are exceptions and inconsistencies.
