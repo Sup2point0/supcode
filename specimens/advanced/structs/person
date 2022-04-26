@@ -2,11 +2,11 @@ spec code { ver = 5.5 | syn = utinax | sty = stan }
 
 
 create struct 'person' {
-  on person.create(str('name')) [
+  define person.create(str('name')) [
     | int('age')
-    | str('nationality')
-    | list('languages')[str]
-    | colour {
+    | str('nationality') = none
+    | (str)s('languages')
+    | class 'colour' {
       | skin = none
       | hair = none
       | eyes = none
@@ -17,9 +17,11 @@ create struct 'person' {
     set person.'name' = name
     set person.'age' = age
 
-    set person.'colour'.'skin' = colour.skin
-    set person.'colour'.'hair' = colour.hair
-    set person.'colour'.'eyes' = colour.eyes
+    create class 'colour' [person] {
+      set person.colour.'skin' = colour.skin
+      set person.colour.'hair' = colour.hair
+      set person.colour.'eyes' = colour.eyes
+    }
 
     set person.'traits' = (trait)s
   }
