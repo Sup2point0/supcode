@@ -1,0 +1,60 @@
+spec code { ver = 5.5 | syn = utinax | sty = stan }
+
+
+create struct('animal') {
+  define animal.create(ctx) {
+    set animal.'name' = ctx.shard
+  }
+
+  define animal.'play'() {
+    func.out("playing!")
+  }
+}
+
+create animal('wumpus')
+wumpus.play()
+
+
+create struct('spider') [animal] {
+  define spider.create(ctx) [legs = 8] {
+    super.create(ctx)
+    set spider.'legs' = legs
+  }
+
+  define spider.'web'() {
+    func.out("webbing stuff")
+  }
+}
+
+create spider('spidey')[legs = 9]
+spider.play()
+spider.web()
+
+
+create struct('kaiju') [animal] {
+  define kaiju.create(ctx) [power] {
+    super.create(ctx)
+    set kaiju.'power' = power
+  }
+
+  del func(play)
+
+  define kaiju.'destroy'() {
+    func.out("destroying stuff")
+  }
+}
+
+create kaiju('eleking') [power = 2000]
+eleking.destroy()
+
+
+create struct('zetton') [animal, kaiju] {
+  define zetton.'deflect'() {
+    func.out("UNO reverse card")
+  }
+}
+
+create zetton('Zetton')
+Zetton.play()
+Zetton.destroy()
+Zetton.deflect()
