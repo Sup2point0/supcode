@@ -1,4 +1,4 @@
-spec code { ver = 5.4 | syn = utinax | sty = stan }
+spec code { ver = 5.5 | syn = utinax | sty = stan }
 
 
 set 'loot' = "generic" / 20, "rare" / 5, "epic" / 3, "legendary" / 1

@@ -1,7 +1,7 @@
 \ factorial
 \ supcode specimen
 
-spec code { ver = 5.4 | syn = utinax | sty = stan }
+spec code { ver = 5.5 | syn = utinax | sty = stan }
 
 
 create func {

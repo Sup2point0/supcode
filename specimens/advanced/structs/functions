@@ -1,4 +1,4 @@
-spec code { ver = 5.4 | syn = utinax | sty = mixed }
+spec code { ver = 5.5 | syn = utinax | sty = mixed }
 
 
 create struct 'test' {

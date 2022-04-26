@@ -2,7 +2,7 @@
 \ supcode specimen
 
 spec code {
-  | lan = sup | ver = 5.4
+  | lan = sup | ver = 5.5
   | syn = utinax | rev = one
 }
 
