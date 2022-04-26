@@ -1,6 +1,6 @@
 spec code {
   | pool(language, lan, lang) = {sup, supper, suppy}
-  | ver(version, ver, vers) = 5.4
+  | ver(version, ver, vers) = 5.5
   | pool(syntax, syn, synt) = {utinax, veritinax, resinax}
   | pool(revision, rev, revn) = syntax {utinax: {one}, veritinax: {numc(1.1)[ver]}, resinax: {numc(1.4)[ver]}}
   | pool(interpreter, run, intr) = {

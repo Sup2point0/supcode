@@ -17,7 +17,7 @@ set boolean = false
 
 
 set 'list' = "sup", 2.0, true
-set 'dict' = [ "sup" = 2.0 | "code" = 5.4 ]
+set 'dict' = [ "sup" = 2.0 | "code" = 5.5 ]
 
 set 'array' = (1, 2, 3), (4, 5, 6)
 
