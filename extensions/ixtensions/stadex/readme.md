@@ -23,7 +23,7 @@ Stadex-related errors.
 
 ## Specimen
 
-```
+```coffee
 active stadex
 
 stadex.open(stage)[size = sys.inv.size(max)]
@@ -31,12 +31,17 @@ stadex.open(stage)[size = sys.inv.size(max)]
 create stadex.sprite('portal') [
   | source = sys.file('portal.svg')
 ] {
-  set sprite.x = 0
-  set sprite.y = 0
-  set sprite.dir = 90
+  set portal.x = 0
+  set portal.y = 0
+  set portal.dir = 90
 
-  define portal.'spin'() {
-    ...
+  define portal.'spin'(speed) {
+    alt portal.dir + speed
+  }
+
+  define portal.'orbit'(size = 200 or void, speed) {
+    alt portal.x + ((size * sin(sys.timer) - portal.x) * 2) / (speed * 2)
+    alt portal.y + ((size * cos(sys.timer) - portal.y) * 2) / (speed * 2)
   }
 }
 ```
