@@ -1,4 +1,4 @@
-# *supcoda*
+# *supcoda* v2.0
 
 Welcome to *supcoda*, the new updated full walkthrough to Supcode, and the successor to *The Comprehensive Guide to Supcode*.
 
@@ -6,6 +6,7 @@ Welcome to *supcoda*, the new updated full walkthrough to Supcode, and the succe
 
 - [The Basics](basics)
   - [Comments](basics/comments.md)
+  - [The Prompt](basics/prompt.md)
 - [Intermediate](intermediate)
 - [Advanced](advanced)
 - [Experienced](experienced)
