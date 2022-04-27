@@ -28,7 +28,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Purpose </td>
-    <td> general purpose – games, websites, programs </td>
+    <td> general-purpose – games, programs, scripts </td>
   </tr>
   <tr>
     <td> Syntax </td>
@@ -72,7 +72,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Other flavours </td>
-    <td> Veritinax 1.0, Resinax 1.6 </td>
+    <td> Veritinax One, Resinax 1.6 </td>
   </tr>
   <tr>
     <td> Initial release </td>
@@ -88,7 +88,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> IDEs </td>
-    <td> supcode Studio, supcode Studio Strium </td>
+    <td> <a href="suplus/supcode%20Studio">supcode Studio</a>, supcode Studio Strium </td>
   </tr>
   <tr>
     <td> Latest release </td>
