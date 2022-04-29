@@ -2,6 +2,7 @@
 
 An ixtension for interacting with the *stage*, an inbuilt environment for creating and manipulating sprites, to create anything imaginable, but games in particular.
 
+
 ## Subextensions
 
 ### `sensyx`
@@ -16,10 +17,12 @@ Visuals and effects.
 ### `tracyx`
 Pen rendering.
 
+
 ## Intrinsics
 
 ### `stadux`
 Stadex-related errors.
+
 
 ## Specimen
 
@@ -44,4 +47,11 @@ create stadex.sprite('portal') [
     alt portal.y + ((size * cos(sys.timer) - portal.y) * 2) / (speed * 2)
   }
 }
+
+on start loop forever {{
+
+  portal.orbit()
+  portal.spin()
+
+}}
 ```
