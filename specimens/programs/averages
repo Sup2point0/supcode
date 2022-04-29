@@ -6,27 +6,23 @@ spec code { ver = 5.5 | syn = utinax | sty = stan }
 
 create func {
   define average((sequence)s) [
-    pool('type') = {{mode}, {median}, {'mean', arithmetic}, {geometric}}
+    pool('type') = {{mode}, {median}, {'mean', arithmetic}}
   ] {
+    set 'seq' = (sequence)s.items.items
 
     openif with type {
-
       = mode |
-        set 'seq' = (sequence)s.items.items
         set 'mode' = none
         set 'max' = 0
-
         loop for item in seq {
           if seq:item.len > max {
             set mode = item
             set max = sup#1
           }
-        }
-        
-        func.out(mode)
+        } func.out(mode)
 
       = median |
-        set 'seq' = (sequence)s.items.items
+        alt sort(seq)
         if seq.len % 2 > 0 {
           set 'idx' = floor(seq.len / 2) + 1
           func.out(seq#idx)
@@ -36,10 +32,7 @@ create func {
         }
         
       = mean |
-        ...
-        
-      = geometric |
-        ...
-
+        func.out(sum(seq) / seq.len)
     }
+  }
 }
