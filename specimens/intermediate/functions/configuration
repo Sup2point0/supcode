@@ -1,0 +1,13 @@
+spec code { ver = 5.5 | syn = utinax | sty = stan }
+
+
+define func((par)s) {
+  loop for item in par {
+    func.out(item)
+  }
+}
+
+func(1, 2, 3)
+
+set 'pars' = 1, 2, 3
+func(pars#)
