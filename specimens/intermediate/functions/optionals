@@ -1,0 +1,17 @@
+spec code { ver = 5.5 | syn = utinax | sty = stan }
+
+
+define func(test = none) {
+  ...
+}
+
+func("sup")
+func()
+
+
+define func(ctx = void, test) {
+  ...
+}
+
+func(none, 2.0)
+func(2.0)
