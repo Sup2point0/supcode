@@ -1,24 +1,38 @@
 # Inbuilt Functions
 
-A reference of all the inbuilt functions available in Supcode.
+A reference for all the inbuilt functions available in Supcode.
 
 
 ## Contents
 
 ### Foundational
-
 - [`help`]()
+- [`activate`]()
+- [`await`]()
+- [`create`]()
+- [`load`]()
+- [`loop`]()
+- [`next`]()
 - [`out`]()
-- [`active`]()
+- [`prime`]()
 
 ### General
-
+- [`add`]
 - [`case`]()
+- [`clear`]()
+- [`count`]()
+- [`delete`]()
+- [`exit`]()
+- [`insert`]()
+- [`open`]()
 - [`sort`]()
+- [`replace`]()
+- [`reverse`]()
+- [`search`]()
 - [`split`]()
+- [`strip`]()
 
-### Calculatical
-
+### Calculational
 - [`round`]()
 - [`floor`]()
 - [`ceil`]()
