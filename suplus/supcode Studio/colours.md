@@ -9,7 +9,6 @@ WIP.
 
 
 ### supcode Nova
-
 The official Supcode colours.
 
 #### Complementary Theme
@@ -17,15 +16,13 @@ The official Supcode colours.
 
 
 ### supcode from Scratch
+The colours of Scratch.
 
 #### Complementary Theme
 [Scratch](themes.md#scratch)
 
-The colours of Scratch.
-
 
 ### supcode RAW
-
 Minimal highlighting with only the bare necessities.
 
 #### Complementary Theme
@@ -33,7 +30,6 @@ Minimal highlighting with only the bare necessities.
 
 
 ### supcode NEOX
-
 A neon theme optilyzed for dark mode and screens capable of displaying deep hues.
 
 #### Complementary Themes
@@ -41,7 +37,6 @@ A neon theme optilyzed for dark mode and screens capable of displaying deep hues
 
 
 ### supcode Studox
-
 A specialyzed colour configuration for productivity and efficiency.
 
 
@@ -51,7 +46,6 @@ A specialyzed colour configuration for productivity and efficiency.
 
 
 ### Equinox
-
 Warm, vibrant solaryzed colours.
 
 #### Complementary Theme
@@ -59,7 +53,6 @@ Warm, vibrant solaryzed colours.
 
 
 ### Nevox
-
 Cold, dark pensive colours.
 
 #### Complementary Theme
@@ -67,7 +60,6 @@ Cold, dark pensive colours.
 
 
 ### Fermox
-
 Metallic, harsh and high-contrast.
 
 #### Complementary Theme
@@ -75,7 +67,6 @@ Metallic, harsh and high-contrast.
 
 
 ### Galactox
-
 Spectacular out-of-this-world colours, like a supernova before your eyes.
 
 #### Complementary Theme
@@ -83,5 +74,4 @@ Spectacular out-of-this-world colours, like a supernova before your eyes.
 
 
 ### RESNOX
-
 Optilyzed for Resinax.

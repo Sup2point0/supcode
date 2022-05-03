@@ -4,10 +4,8 @@ The official proprietary IDE for Supcode.
 
 
 ## Features
-
 ...
 
 
 ## Languages
-
 ...

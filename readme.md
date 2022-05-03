@@ -97,16 +97,13 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
 </table>
 
 ### Aims and Improvements
-
 Supcode is designed to be intuitive, concise and readable. It serves as a bridge between the block-based environment of Scratch and proper text-based programming languages, maintaining most of the key concepts and features while transferring the structure and syntax into a text-based format, and opening up room for much more powerful and complex programs.
 
 Supcode comes with powerful customizability and convenient shortcuts. Like Scratch, there is an extensive assortment of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialization and applications.
 
 ### Files and Applications
-
 Supcode files use the `.sc` filename extension. Often, this has a number following it to indicate the version number, i.e. `.sc4`, `.sc5`, etc. to allow for identification, version conversion and compatibility indication. Extensions use the `.scx` file extension. There are also a several other file extensions for highly specialized uses, such as `.scd` or `.scv`, though these are rarely used.
 
 
 ## Specimens
-
 Various specimens, including aspects and programs, can be found [here](/specimens).
