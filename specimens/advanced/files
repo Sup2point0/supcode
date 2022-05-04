@@ -1,10 +1,9 @@
-spec code { ver = 5.5 | syn = utinax | sty = full }
-
+spec code { ver = 5.6 | syn = utinax | sty = full }
 
 enable sys
 
 
-set 'f' = sys.file('test.txt')
+set 'f' = sys.file(test.txt)
 
 set 'name' = f.name
 set 'type' = f.type
@@ -13,5 +12,5 @@ set 'file' = f.ext
 sys.out(f.info)
 
 loop for line in f {
-  sys.out("`line.count`  `line.content`")
+  sys.out(" `line.count`  `line.content`")
 }
