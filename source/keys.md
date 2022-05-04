@@ -7,6 +7,7 @@ A reference for all the control keywords and characters in Supcode. For a refere
 
 ### Keywords
 - [`and`]()
+- [`auto`]()
 - [`define`]()
 - [`elif`]()
 - [`else`]()

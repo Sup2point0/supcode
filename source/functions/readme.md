@@ -1,6 +1,6 @@
 # Inbuilt Functions
 
-A reference for all the inbuilt functions available in Supcode.
+A reference for all the inbuilt functions in Supcode.
 
 
 ## Contents
@@ -10,6 +10,7 @@ A reference for all the inbuilt functions available in Supcode.
 - [`activate`]()
 - [`await`]()
 - [`create`]()
+- [`enable`]()
 - [`load`]()
 - [`loop`]()
 - [`next`]()
