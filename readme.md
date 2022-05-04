@@ -1,6 +1,6 @@
 ## Introduction
 
-Supcode is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://m.mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.6.
+Supcode is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.6.
 
 <table>
   <tr>
@@ -16,15 +16,15 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Level </td>
-    <td> high-level </td>
+    <td> <a href="https://wikipedia.org/wiki/High-level_programming_language">high-level</a> </td>
   </tr>
   <tr>
     <td> Execution </td>
-    <td> interpreted </td>
+    <td> <a href="https://wikipedia.org/wiki/Interpreter_(computing)">interpreted</a> </td>
   </tr>
   <tr>
     <td> Paradigm </td>
-    <td> multi-paradigm – imperative, event-driven, multi-threaded </td>
+    <td> multi-paradigm – <a href="https://wikipedia.org/wiki/Imperative_programming">imperative</a>, <a href="https://wikipedia.org/wiki/Event-driven_programming">event-driven</a>, <a href="https://wikipedia.org/wiki/Parallel_computing">multi-threaded</a> </td>
   </tr>
   <tr>
     <td> Purpose </td>
@@ -36,7 +36,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Type </td>
-    <td> dynamic </td>
+    <td> <a href="https://wikipedia.org/wiki/Type_system#DYNAMIC">dynamic</a> </td>
   </tr>
   <tr>
     <td> Indentation </td>
@@ -56,7 +56,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Loosely based on </td>
-    <td> <a href="https://m.mediawiki.org/wiki/Wikitext">Wikitext Markup</a>, <a href="https://swift.org">Swift</a>, HTML </td>
+    <td> <a href="https://mediawiki.org/wiki/Wikitext">Wikitext Markup</a>, <a href="https://swift.org">Swift</a>, HTML </td>
   </tr>
   <tr>
     <td> Filename extensions </td>
@@ -80,7 +80,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Founder </td>
-    <td> Sup#2.0 </td>
+    <td> <a href="https://github.com/Sup2point0">Sup#2.0</a> </td>
   </tr>
   <tr>
     <td> Developer </td>
@@ -88,7 +88,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> IDEs </td>
-    <td> <a href="suplus/supcode%20Studio">supcode Studio</a>, supcode Studio Strium </td>
+    <td> <a href="suplus/supcode%20Studio">supcode Studio</a>, <a href="suplus/supcode%20Studio/supcode%20Studio%20Strium">supcode Studio Strium</a> </td>
   </tr>
   <tr>
     <td> Latest release </td>
@@ -99,7 +99,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
 ### Aims and Improvements
 Supcode is designed to be intuitive, concise and readable. It serves as a bridge between the block-based environment of Scratch and proper text-based programming languages, maintaining most of the key concepts and features while transferring the structure and syntax into a text-based format, and opening up room for much more powerful and complex programs.
 
-Supcode comes with powerful customizability and convenient shortcuts. Like Scratch, there is an extensive assortment of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialization and applications.
+Supcode comes with powerful customizability and convenient shortcuts. Like Scratch, there is an extensive assortment of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialyzation and applications.
 
 ### Files and Applications
 Supcode files use the `.sc` filename extension. Often, this has a number following it to indicate the version number, i.e. `.sc4`, `.sc5`, etc. to allow for identification, version conversion and compatibility indication. Extensions use the `.scx` file extension. There are also a several other file extensions for highly specialized uses, such as `.scd` or `.scv`, though these are rarely used.
