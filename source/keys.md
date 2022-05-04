@@ -22,6 +22,7 @@ A reference for all the control keywords and characters in Supcode. For a refere
 - [`nor`]()
 - [`not`]()
 - [`on`]()
+- [`openif`]()
 - [`or`]()
 - [`try`]()
 - [`until`]()
