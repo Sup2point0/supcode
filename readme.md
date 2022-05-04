@@ -1,6 +1,6 @@
 ## Introduction
 
-Supcode is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://m.mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.5.
+Supcode is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://m.mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.6.
 
 <table>
   <tr>
@@ -52,11 +52,11 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Based on </td>
-    <td> Scratch, Python </td>
+    <td> <a href="https://scratch.mit.edu">Scratch</a>, <a href="https://python.org">Python</a> </td>
   </tr>
   <tr>
     <td> Loosely based on </td>
-    <td> Wikitext Markup, Swift, HTML </td>
+    <td> <a href="https://m.mediawiki.org/wiki/Wikitext">Wikitext Markup</a>, <a href="https://swift.org">Swift</a>, HTML </td>
   </tr>
   <tr>
     <td> Filename extensions </td>
@@ -68,11 +68,11 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Main flavour </td>
-    <td> Utinax One </td>
+    <td> <a href="source/syntax.md#utinax">Utinax One</a> </td>
   </tr>
   <tr>
     <td> Other flavours </td>
-    <td> Veritinax One, Resinax 1.6 </td>
+    <td> <a href="source/syntax.md#veritinax">Veritinax One</a>, <a href="source/syntax.md#resinax">Resinax 1.6</a> </td>
   </tr>
   <tr>
     <td> Initial release </td>
@@ -92,7 +92,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
   </tr>
   <tr>
     <td> Latest release </td>
-    <td> 5.5 (April 2022) </td>
+    <td> 5.6 (May 2022) </td>
   </tr>
 </table>
 
