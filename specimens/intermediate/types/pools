@@ -1,0 +1,20 @@
+spec code { ver = 5.6 | syn = utinax | sty = stan }
+
+
+set 'p' = {1, 2, 3}
+
+loop for i in p {
+  sys.out(i ^ 2)
+}
+
+
+set pool('l')[sup | nova | shard] = slot(sup)
+
+set l = slot(nova)
+set l = slot(shard)
+
+if l = nova {
+  ...
+elif l = slot(shard) |
+  ...
+}
