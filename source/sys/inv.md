@@ -4,8 +4,10 @@ The system inventory, containing a plethora of useful presets.
 
 
 ## Contents
-- [`blank`](...)
-- [`size`](...)
+
+- [`blank`](#blank)
+- [`size`](#size)
+
 
 ### `size`
 
