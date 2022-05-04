@@ -19,31 +19,31 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
     <td> <a href="https://wikipedia.org/wiki/High-level_programming_language">high-level</a> </td>
   </tr>
   <tr>
-    <td> <a href="https://en.wikipedia.org/wiki/Execution_(computing)">Execution</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Execution_(computing)">Execution</a> </td>
     <td> <a href="https://wikipedia.org/wiki/Interpreter_(computing)">interpreted</a> </td>
   </tr>
   <tr>
-    <td> <a href="https://en.wikipedia.org/wiki/Programming_paradigm">Paradigm</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Programming_paradigm">Paradigm</a> </td>
     <td> multi-paradigm – <a href="https://wikipedia.org/wiki/Imperative_programming">imperative</a>, <a href="https://wikipedia.org/wiki/Event-driven_programming">event-driven</a>, <a href="https://wikipedia.org/wiki/Parallel_computing">multi-threaded</a> </td>
   </tr>
   <tr>
     <td> Purpose </td>
-    <td> <a href="https://en.wikipedia.org/wiki/General-purpose_programming_language">general-purpose</a> – games, programs, scripts </td>
+    <td> <a href="https://wikipedia.org/wiki/General-purpose_programming_language">general-purpose</a> – games, programs, scripts </td>
   </tr>
   <tr>
     <td> Syntax </td>
     <td> human-friendly – readable, intuitive, keyword-focused </td>
   </tr>
   <tr>
-    <td> <a href="https://en.wikipedia.org/wiki/Type_system">Type</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Type_system">Type</a> </td>
     <td> <a href="https://wikipedia.org/wiki/Type_system#DYNAMIC">dynamic</a> </td>
   </tr>
   <tr>
     <td> Indentation </td>
-    <td> <a href="https://en.wikipedia.org/wiki/Off-side_rule">significant</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Off-side_rule">significant</a> </td>
   </tr>
   <tr>
-    <td> <a href="https://en.wikipedia.org/wiki/Operating_system">Platform</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Operating_system">Platform</a> </td>
     <td> any </td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
     <td> <a href="https://mediawiki.org/wiki/Wikitext">Wikitext Markup</a>, <a href="https://swift.org">Swift</a>, HTML </td>
   </tr>
   <tr>
-    <td> <a href="https://en.wikipedia.org/wiki/Filename_extension">Filename extensions</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Filename_extension">Filename extensions</a> </td>
     <td> <code>.sc</code>, <code>.sc5</code>, <code>.scx</code> </td>
   </tr>
   <tr>
@@ -67,7 +67,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
     <td> <code>.scd</code>, <code>.scp</code>, <code>.scv</code>, <code>.scl</code>, <code>.scs</code>, <code>.scg</code> </td>
   </tr>
   <tr>
-    <td> Main <a href="https://en.wikipedia.org/wiki/Flavors_(programming_language)">flavour</a> </td>
+    <td> Main <a href="https://wikipedia.org/wiki/Flavors_(programming_language)">flavour</a> </td>
     <td> <a href="source/syntax.md#utinax">Utinax One</a> </td>
   </tr>
   <tr>
@@ -87,7 +87,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
     <td>  2.0 Studios (2.0 Studios LLC) </td>
   </tr>
   <tr>
-    <td> <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDEs</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Integrated_development_environment">IDEs</a> </td>
     <td> <a href="suplus/supcode%20Studio">supcode Studio</a>, <a href="suplus/supcode%20Studio/supcode%20Studio%20Strium">supcode Studio Strium</a> </td>
   </tr>
   <tr>
