@@ -1,12 +1,18 @@
 \ averages
 \ supcode Specimen
 
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 
 create func {
   define average((sequence)s) [
-    pool('type') = {{mode}, {median}, {'mean', arithmetic}}
+    pool('type')[
+      {
+        | mode
+        | median
+        | mean = {mean, arithmetic}
+      }
+    ] = slot(mean)
   ] {
     set 'seq' = (sequence)s.items.items
 
