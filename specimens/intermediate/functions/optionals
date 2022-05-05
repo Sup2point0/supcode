@@ -1,17 +1,38 @@
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 
 define func(test = none) {
-  ...
+  if test > none {
+    func.out(test * 2)
+  }
 }
 
 func("sup")
 func()
 
 
-define func(ctx = void, test) {
-  ...
+define func(par1, par2 = true, par3 = false) {
+  func.out(par1, par2, par3)
 }
 
-func(none, 2.0)
-func(2.0)
+func(1, 2, 3)
+func(1, 2)
+func(1)
+
+
+define func(ctx = void, test) {
+  if ctx {
+    func.out(test * ctx)
+  }
+}
+
+func(2.0, "sup")
+func("sup")
+
+
+define func(ctx = void(2), test) {
+  func.out(test * ctx)
+}
+
+func(4, "sup")
+func("sup")
