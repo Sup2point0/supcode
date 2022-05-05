@@ -2,6 +2,7 @@
 
 An assortment of extensions available for Supcode.
 
+
 ## Ixtensions
 
  - `audix`
@@ -20,6 +21,7 @@ An assortment of extensions available for Supcode.
  - [`stadex`](https://github.com/Sup2point0/supcode/tree/sup/extensions/ixtensions/stadex)
  - `tracix`
 
+
 ## Endextensions
 
  - `cortex`
@@ -31,11 +33,14 @@ An assortment of extensions available for Supcode.
  - `genex`
  - `jedex`
  - `kinex`
+ - `latex`
  - `litex`
  - `modex`
+ - `perspex`
  - `quorex`
  - `securex`
  - `seprex`
+
 
 ## Extextensions
 
@@ -43,6 +48,7 @@ An assortment of extensions available for Supcode.
  - `corvex`
  - `dragonex`
  - `licerex`
+ - `lintex`
  - `ophiex`
  - `qortex`
  - `rendex`
