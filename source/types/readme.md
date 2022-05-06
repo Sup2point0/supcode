@@ -6,35 +6,35 @@ A reference for all the inbuilt types in Supcode.
 ## Contents
 
 ### Values
-- [`str`](#)
-- [`int`](#)
-- [`bool`](#)
-- [`void`](#)
-- [`numc`](#)
-- [`hex`](#)
-- [`frac`](#)
-- [`cent`](#)
+- [`str`](#str)
+- [`int`](#int)
+- [`bool`](#bool)
+- [`void`](#void)
+- [`numc`](#numc)
+- [`hex`](#hex)
+- [`frac`](#frac)
+- [`cent`](#cent)
 
 ### Elements
-- [`var`](#)
-- [`prop`](#)
-- [`func`](#)
-- [`lurk`](#)
-- [`struct`](#)
-- [`class`](#)
-- [`event`](#)
-- [`error`](#)
-- [`intr`](#)
-- [`stat`](#)
-- [`par`](#)
-- [`opt`](#)
+- [`var`](#var)
+- [`prop`](#prop)
+- [`func`](#func)
+- [`lurk`](#lurk)
+- [`struct`](#struct)
+- [`class`](#class)
+- [`event`](#event)
+- [`error`](#error)
+- [`intr`](#intr)
+- [`stat`](#stat)
+- [`par`](#par)
+- [`opt`](#opt)
 
 ### Iterables
-- [`list`](#)
-- [`pool`](#)
+- [`list`](#list)
+- [`pool`](#pool)
 
 ### Mappings
-- [`dict`](#)
+- [`dict`](#dict)
 
 ### Miscellaneous
-- [`slot](#)`
+- [`slot`](#slot)
