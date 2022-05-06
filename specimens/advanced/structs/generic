@@ -1,16 +1,17 @@
-spec code { ver = 5.5 | syn = utinax | sty = mixed }
+spec code { ver = 5.6 | syn = utinax | sty = mixed }
 
 
 create struct 'name' {
-  on name.create(context, (option)s) [(attribute)s] {
+  define name.create(context, (option)s) [(attribute)s] {
     set name.'var1' = (option)s#1
     set name.'var2' = (option)s#2
+
     loop for key, value in (attribute)s {
       set name.var(key) = value
     }
   }
 
-  define name.'function'(option) {
+  define name.'test'(option) {
     func.out(name.var(option))
   }
 
@@ -21,18 +22,33 @@ create struct 'name' {
   }
 }
 
+create name('test', "sup", 2.0) [
+  | opt1 = none
+  | opt2 = true
+  | opt3 = false
+]
+
+sys.out(test.var1 * test.var2)
+sys.out(test.opt1 or test.opt2 or test.opt3)
+
+test.test('var1')
+name.content
+name.view()
+
+
 
 create struct('name') {
   define self.create(context, (option)s) [(attribute)s] {
     set self.'var1' = (option)s#1
     set self.'var2' = (option)s#2
+
     loop for key, value in (attribute)s {
       set self.var(key) = value
     }
   }
 
   create func [self] {
-    define self.function(option) {
+    define self.test(option) {
       func.out(self.var(option))
     }
   }

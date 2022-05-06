@@ -1,16 +1,32 @@
-spec code { ver = 5.5 | syn = utinax | sty = mixed }
+spec code { ver = 5.6 | syn = utinax | sty = mixed }
 
 
-create struct 'test' {
-  define test.'function'(option) {
+create struct 'soup' {
+  define soup.'test'() {
+    ...
+  }
+
+  define 'testing'(soup('sup')) {
     ...
   }
 }
 
+create soup 'sup'
+sup.test()
 
-create struct('test') {
+define 'testing'() { ... }
+testing(sup)
+
+
+create struct('soup') {
   create func [struct] {
-    define self.function(option) {
+    define self.test() {
+      ...
+    }
+  }
+
+  create func [evo] {
+    define testing(self) {
       ...
     }
   }
