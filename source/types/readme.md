@@ -32,11 +32,18 @@ A reference for all the inbuilt types in Supcode.
 ### Iterables
 - [`list`](#list)
 - [`pool`](#pool)
+- [`array`](#array)
+- [`lattice`](#lattice)
+- [`matrix`](#matrix)
 
-### Mappings
+### Properties
 - [`dict`](#dict)
+- [`shard`](#shard)
 
 ### Miscellaneous
-- [`index`](#index)
 - [`slot`](#slot)
 - [`span`](#span)
+
+### Abstract
+- [`index`](#index)
+- [`type`](#)
