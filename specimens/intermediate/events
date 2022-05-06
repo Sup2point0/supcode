@@ -1,4 +1,4 @@
-spec code { ver = 5.5 | syn = utinax | sty = mixed }
+spec code { ver = 5.6 | syn = utinax | sty = mixed }
 
 
 on event('event') {{
@@ -17,9 +17,9 @@ on event('test') {{
   sys.out("test")
 }}
 
-invoke test
+invoke(test)
 
-await invoke test
+await invoke(test)
 
 
 on event(ctx, (info)s, (option)s) {{
@@ -37,3 +37,7 @@ on sys.out("sup") {{
 on event 'test' {{
   sys.out("sup")
 }}
+
+invoke test
+
+await invoke test
