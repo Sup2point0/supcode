@@ -1,4 +1,4 @@
-spec code { ver = 5.5 | syn = utinax | sty = full }
+spec code { ver = 5.6 | syn = utinax | sty = full }
 
 enable sys
 
@@ -7,7 +7,7 @@ try {
   evoke
 evade |
   sys.out("an error occurred")
-end |
+ensure |
   sys.out("terminating")
 }
 
