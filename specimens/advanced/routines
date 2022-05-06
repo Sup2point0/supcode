@@ -1,0 +1,12 @@
+spec code { ver = 5.6 | syn = utinax | sty = stan }
+
+
+set 'timer' = 0
+
+create routine [time = 1] {
+  define 'tick' {
+		alt timer + 1
+	}
+}
+
+initiate tick
