@@ -2,6 +2,12 @@
 
 A reference for all the inbuilt errors in Supcode.
 
+```coffee
+struct sys.'error' {
+  intr str 'str'
+}
+```
+
 
 ## Contents
 
