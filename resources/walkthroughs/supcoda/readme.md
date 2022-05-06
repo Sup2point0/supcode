@@ -2,16 +2,21 @@
 
 Welcome to *supcoda*, the new updated full walkthrough to Supcode, and the successor to *The Comprehensive Guide to Supcode*.
 
+
 ## Contents
 
 - [The Basics](basics)
   - [Comments](basics/comments.md)
   - [The Prompt](basics/prompt.md)
+  - [Variables](basics/variables.md)
+  - [Functions](basics/functions.md)
+  - [Control Flow](basics/control.md)
 - [Intermediate](intermediate)
 - [Advanced](advanced)
 - [Experienced](experienced)
 - [Miscellaneous](miscellaneous)
 - [Projects](projects)
+
 
 ## Extended
 
