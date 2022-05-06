@@ -37,4 +37,6 @@ A reference for all the inbuilt types in Supcode.
 - [`dict`](#dict)
 
 ### Miscellaneous
+- [`index`](#index)
 - [`slot`](#slot)
+- [`span`](#span)
