@@ -28,6 +28,7 @@ A reference for all the inbuilt types in Supcode.
 - [`stat`](#stat)
 - [`par`](#par)
 - [`opt`](#opt)
+- [`ext`](#ext)
 
 ### Iterables
 - [`list`](#list)
