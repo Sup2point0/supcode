@@ -1,22 +1,25 @@
-spec code { ver = 5.3 | syn = utinax | sty = full }
+spec code { ver = 5.6 | syn = utinax | sty = mixed }
 
 
 set 'pick' = ran(1~4)
+
 openif with pick = {
-  1 |
-    sys.out("nice")
-  2 |
-    sys.out("cool")
-  3 |
-    sys.out("epic")
-  4 |
-    sys.out("super")
+  1 | sys.out("nice")
+  2 | sys.out("cool")
+  3 | sys.out("epic")
+  4 | sys.out("super")
 }
 
+
 set pick = ran(1~12)
+
 openif with pick in {
-  1~6 | sys.out("generic")
-  7~9 | sys.out("rare")
-  10~11 | sys.out("epic")
-  12 | sys.out("legendary")
+  1~6 |
+    sys.out("generic")
+  7~9 |
+    sys.out("rare")
+  10~11 |
+    sys.out("epic")
+  12 |
+    sys.out("legendary")
 }
