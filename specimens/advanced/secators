@@ -1,16 +1,14 @@
 < supcode >
-  < spec[ver = 5.3 | syn = utinax | sty = secated] >
+  < spec[ver = 5.6 | syn = utinax | sty = secated] >
 
     < sec 'setup' >
-      <->
-        < class('test')[var] >
-      <->
-        < sec[set | class = test] >
+      < class('test')[var] >
+        < sec[set] >
           state = true
           score = 0
           time = 0.0
         < /sec >
-      <->
+      < /class >
     < /sec >
 
     < sec 'main' >
