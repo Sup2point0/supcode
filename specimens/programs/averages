@@ -14,7 +14,7 @@ create func {
       }
     ] = slot(mean)
   ] {
-    set 'seq' = (sequence)s.items.items
+    set 'seq' = (sequence)s##
 
     openif with type {
       = mode |
