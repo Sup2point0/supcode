@@ -21,6 +21,7 @@ A reference for all the inbuilt functions in Supcode.
 
 ### General
 - [`add`]()
+- [`apply`]()
 - [`case`]()
 - [`clear`]()
 - [`count`]()
