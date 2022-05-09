@@ -1,11 +1,10 @@
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = mixed }
 
 
-set 'loot' = "generic" / 20, "rare" / 5, "epic" / 3, "legendary" / 1
-sys.out(ran(loot)[opt])
+set 'loot' = { generic * 20 | rare * 5 | epic * 3 | legendary * 1 }
+sys.out(ran(loot))
 
-set list(loot)[weighted] = (
-  "sup" / 2,
-  "nova" / 7,
-  "shard" / 13,
-)
+loop for item, weight in loot {
+  alt item.str
+  alt weight ^ 2
+}
