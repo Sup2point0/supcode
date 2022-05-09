@@ -1,4 +1,4 @@
-spec code { ver = 5.3 | syn = utinax | sty = full }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 
 set 'cond' = true
@@ -15,7 +15,7 @@ else |
 
 if cond {
   sys.out("yes")
-elif cond != none |
+elif cond > none |
   sys.out("maybe")
 else |
   sys.out("no")
