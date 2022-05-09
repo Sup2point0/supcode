@@ -9,6 +9,10 @@ The system inventory, containing a plethora of useful presets.
 - [`size`](#size)
 
 
+### `blank`
+A single whitespace character, useful as a placeholder for fields that do not accept empty strings.
+
+
 ### `size`
 
 ```coffee
@@ -19,4 +23,4 @@ class 'size' {
 
 | variable | type | description |
 | :------- | :--- | :---------- |
-| `max` | | Maximize the window to fill all available space onscreen. |
+| `max` | `slot` | Maximize the window to fill all available space onscreen. |
