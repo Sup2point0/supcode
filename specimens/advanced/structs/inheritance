@@ -1,13 +1,13 @@
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 
 create struct('animal') {
-  define animal.create(ctx) {
-    set animal.'name' = ctx.shard
+  evolve animal.create(ctx) {
+    set animal.'name' = ctx.shard.str
   }
 
   define animal.'play'() {
-    func.out("playing!")
+    func.out("`animal.name` is playing!")
   }
 }
 
