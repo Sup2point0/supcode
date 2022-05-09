@@ -6,45 +6,46 @@ A reference for all the inbuilt types in Supcode.
 ## Contents
 
 ### Values
-- [`str`](#str)
-- [`int`](#int)
 - [`bool`](#bool)
-- [`void`](#void)
-- [`numc`](#numc)
-- [`hex`](#hex)
-- [`frac`](#frac)
 - [`cent`](#cent)
+- [`frac`](#frac)
+- [`hex`](#hex)
+- [`int`](#int)
+- [`numc`](#numc)
+- [`str`](#str)
+- [`void`](#void)
 
 ### Elements
-- [`var`](#var)
-- [`prop`](#prop)
-- [`func`](#func)
-- [`lurk`](#lurk)
-- [`struct`](#struct)
 - [`class`](#class)
-- [`event`](#event)
+- [`collection`](#collection)
 - [`error`](#error)
-- [`intr`](#intr)
-- [`stat`](#stat)
-- [`par`](#par)
-- [`opt`](#opt)
+- [`event`](#event)
 - [`ext`](#ext)
+- [`func`](#func)
+- [`intr`](#intr)
+- [`lurk`](#lurk)
+- [`prop`](#prop)
+- [`stat`](#stat)
+- [`struct`](#struct)
+- [`var`](#var)
 
 ### Iterables
-- [`list`](#list)
-- [`pool`](#pool)
 - [`array`](#array)
-- [`lattice`](#lattice)
-- [`matrix`](#matrix)
-
-### Properties
 - [`dict`](#dict)
-- [`shard`](#shard)
+- [`lattice`](#lattice)
+- [`list`](#list)
+- [`matrix`](#matrix)
+- [`pool`](#pool)
 
 ### Miscellaneous
+- [`shard`](#shard)
 - [`slot`](#slot)
 - [`span`](#span)
 
 ### Abstract
+- [`field`](#field)
+- [`id`](#id)
 - [`index`](#index)
+- [`opt`](#opt)
+- [`par`](#par)
 - [`type`](#)
