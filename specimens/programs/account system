@@ -1,12 +1,12 @@
 \ account system
 \ supcode specimen
 
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 enable sys
 
 
-set 'data' = ['sup' = "4761"]
+set 'data' = ('sup' ="4761")
 set 'username' = none
 set 'password' = none
 
@@ -27,32 +27,35 @@ on start loop forever {{
   if action = "login" {
     loop until state {
       set username = prompt.ask("enter a username")
-      if sys.key(username) in database.keys {
+      if username.shard in database.keys {
         set state = true
       else |
         prompt.out("username not found")
       }
-    } set state = false
+    }
+    set state = false
     
     loop until state {
       set password = prompt.ask("enter the password")
-      if password = data#sys.key(username) {
+      if password = data#username.shard {
         set state = true
       else |
         prompt.out("incorrect password")
       }
-    } set state = false
+    }
+    set state = false
     prompt.out("successfully logged in to `username`")
 
   elif action = "create" |
     loop until state {
       set username = prompt.out("enter a username")
-      if sys.key(username) in database.keys {
+      if username.shard in database.keys {
         prompt.out("username already exists")
       else |
         set state = true
       }
-    } set state = false
+    }
+    set state = false
     
     loop until state {
       password = prompt.ask("enter a password")
@@ -61,7 +64,7 @@ on start loop forever {{
       else |
         set state = true
     } set state = false
-    set data#sys.key(username) = password
+    set data#username.shard = password
     prompt.out("account successfully created")
 
   elif action = "exit" |
