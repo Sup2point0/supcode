@@ -31,6 +31,7 @@ A reference for all the inbuilt functions in Supcode.
 - [`open`](#open)
 - [`sort`](#sort)
 - [`replace`](#replace)
+- [`reverse`](#reverse)
 - [`search`](#search)
 - [`shuffle`](#shuffle)
 - [`split`](#split)
