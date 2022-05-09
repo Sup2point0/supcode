@@ -38,6 +38,7 @@ A reference for all the inbuilt functions in Supcode.
 
 ### Calculational
 - [`round`](#round)
+- [`fact`](#factorial)
 - [`floor`](#floor)
 - [`ceil`](#ceil)
 - [`abs`](#abs)
