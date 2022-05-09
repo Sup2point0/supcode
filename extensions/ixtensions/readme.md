@@ -5,7 +5,7 @@ Internal extensions that are inbuilt with Supcode. These can be utilyzed directl
 ## `audix`
 Sounds and audio.
 
-## `calcix`
+## [`calcix`](calcix)
 Mathematical functions.
 
 ### Subextensions
