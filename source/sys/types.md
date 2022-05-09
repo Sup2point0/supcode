@@ -9,4 +9,5 @@ A reference for all the inbuilt types in `sys`.
 - [`event`](#event)
 - [`file`](#file)
 - [`operator`](#operator)
+- [`path`](#path)
 - [`url`](#url)
