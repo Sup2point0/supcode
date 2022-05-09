@@ -1,4 +1,4 @@
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 
 create struct 'person' {
@@ -28,7 +28,7 @@ create struct 'person' {
 }
 
 
-create person 'Sup#2.0' [
+create person 'Sup2point0' [
   | age = 2
   | nationality = "Antarctican"
   | languages = "supcode", "suppercode", "Antarctican English"
