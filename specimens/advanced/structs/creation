@@ -27,7 +27,7 @@ create struct 'soup' {
   evolve soup.create(ctx, (par)s) [(opt)s] {
     set soup.'traits' = (par)s#
     loop for key, value in (opt)s {
-      set self.var:key = value
+      set var:self.key = value
     }
   }
 
