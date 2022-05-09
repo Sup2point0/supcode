@@ -30,6 +30,7 @@ A reference for all the control keywords and characters in Supcode. For a refere
 - [`on`](#on)
 - [`openif`](#openif)
 - [`or`](#or)
+- [`seal`](#seal)
 - [`starts`](#starts)
 - [`super`](#super)
 - [`true`](#true)
