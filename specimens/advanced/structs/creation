@@ -1,26 +1,39 @@
-spec code { ver = 5.5 | syn = utinax | sty = mixed }
+spec code { ver = 5.6 | syn = utinax | sty = mixed }
 
 
-create struct 'name' {
-  on name.create(context, (option)s) [(attribute)s] {
-    set name.'var1' = (option)s#1
-    set name.'var2' = (option)s#2
-    loop for key, value in (attribute)s {
-      set name.var(key) = value
-    }
+create struct 'soup' {
+  evolve soup.create(context) [flavour | texture] {
+    set soup.'name' = context.shard.str
+    set soup.'flavour' = flavour
+    set soup.'texture' = texture
   }
 }
 
+create soup('sweetcorn') ["delicious" | "soothing"]
 
-create struct('name') {
-  define self.create(context, (option)s) [(attribute)s] {
-    set self.'var1' = (option)s#1
-    set self.'var2' = (option)s#2
-    loop for key, value in (attribute)s {
-      set self.var(key) = value
-    }
+
+create struct('soup') {
+  define self.create(context) [flavour | texture] {
+    set self.'name' = context.shard.str
+    set self.'flavour' = flavour
+    set self.'texture' = texture
   }
 }
 
+create soup('vegetable') ["yummy" | "thick"]
 
-create name('test', 1.0, 2.0)
+
+create struct 'soup' {
+  evolve soup.create(ctx, (par)s) [(opt)s] {
+    set soup.'traits' = (par)s#
+    loop for key, value in (opt)s {
+      set self.var:key = value
+    }
+  }
+
+  on soup.create(ctx) {
+    sys.out("creation success")
+  }
+}
+
+create soup('tomato', "red", "sour", "sweet", "thick") [vol = 200 | temp = 42]
