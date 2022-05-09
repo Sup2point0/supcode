@@ -29,6 +29,7 @@ A reference for all the control keywords and characters in Supcode. For a refere
 - [`on`](#on)
 - [`openif`](#openif)
 - [`or`](#or)
+- [`super`](#super)
 - [`true`](#true)
 - [`try`](#try)
 - [`until`](#until)
