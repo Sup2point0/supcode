@@ -1,12 +1,10 @@
 \ palindrome check
 \ supcode specimen
 
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 
-create func {
-  define palin(input) {
-    input = str(input)
-    func.out({reverse(input) = input})
-  }
+define 'palin'(input) {
+  input = str(input)
+  func.out({reverse(input) = input})
 }
