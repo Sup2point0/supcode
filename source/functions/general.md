@@ -23,6 +23,20 @@ General-purpose inbuilt functions.
 - [`strip`](#strip)
 
 
+## `add`
+
+```coffee
+func add()
+```
+
+
+## `apply`
+
+```coffee
+func apply()
+```
+
+
 ## `case`
 
 String casing.
@@ -31,4 +45,95 @@ String casing.
 func case(str 'text') [
   | pool 'type' = {upper, lower, caps, title, caption, alternate, none}
 ]
+```
+
+
+## `clear`
+
+```coffee
+func clear()
+```
+
+
+## `count`
+
+```coffee
+func count()
+```
+
+
+## `delete`
+
+```coffee
+func delete()
+```
+
+
+## `exit`
+
+```coffee
+func exit()
+```
+
+
+## `insert`
+
+```coffee
+func insert()
+```
+
+
+## `open`
+
+```coffee
+func open()
+```
+
+
+## `sort`
+
+```coffee
+func sort()
+```
+
+
+## `replace`
+
+```coffee
+func replace()
+```
+
+
+## `reverse`
+
+```coffee
+func reverse()
+```
+
+
+## `search`
+
+```coffee
+func search()
+```
+
+
+## `shuffle`
+
+```coffee
+func shuffle()
+```
+
+
+## `split`
+
+```coffee
+func split()
+```
+
+
+## `strip`
+
+```coffee
+func strip()
 ```
