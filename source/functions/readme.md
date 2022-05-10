@@ -5,7 +5,7 @@ A reference for all the inbuilt functions in Supcode.
 
 ## Contents
 
-### Foundational
+### [Foundational](foundation.md)
 - [`help`](#help)
 - [`activate`](#activate)
 - [`await`](#await)
@@ -19,7 +19,7 @@ A reference for all the inbuilt functions in Supcode.
 - [`prime`](#prime)
 - [`spec`](#spec)
 
-### General
+### [General](general.md)
 - [`add`](#add)
 - [`apply`](#apply)
 - [`case`](#case)
@@ -37,7 +37,7 @@ A reference for all the inbuilt functions in Supcode.
 - [`split`](#split)
 - [`strip`](#strip)
 
-### Calculational
+### [Calculatory](calculatory.md)
 - [`round`](#round)
 - [`fact`](#factorial)
 - [`floor`](#floor)
