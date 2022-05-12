@@ -1,4 +1,4 @@
-spec code { ver = 5.5 | syn = utinax | sty = stan }
+spec code { ver = 5.6 | syn = utinax | sty = stan }
 
 
 activate datix
