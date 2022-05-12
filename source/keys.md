@@ -7,7 +7,6 @@ A reference for all the control keywords and characters in Supcode. For a refere
 
 ### Keywords
 - [`and`](#and)
-- [`auto`](#auto)
 - [`define`](#define)
 - [`elif`](#elif)
 - [`else`](#else)
@@ -15,7 +14,6 @@ A reference for all the control keywords and characters in Supcode. For a refere
 - [`ensure`](#ensure)
 - [`evade`](#evade)
 - [`evoke`](#evoke)
-- [`false`](#false)
 - [`for`](#for)
 - [`has`](#has)
 - [`if`](#if)
@@ -24,7 +22,6 @@ A reference for all the control keywords and characters in Supcode. For a refere
 - [`invoke`](#invoke)
 - [`is`](#is)
 - [`let`](#let)
-- [`none`](#none)
 - [`nor`](#nor)
 - [`not`](#not)
 - [`on`](#on)
@@ -32,13 +29,21 @@ A reference for all the control keywords and characters in Supcode. For a refere
 - [`or`](#or)
 - [`seal`](#seal)
 - [`starts`](#starts)
-- [`super`](#super)
-- [`true`](#true)
 - [`try`](#try)
 - [`until`](#until)
-- [`void`](#void)
 - [`while`](#while)
 - [`xor`](#xor)
+
+### Presets
+- [`auto`]()
+- [`default`]()
+- [`false`]()
+- [`i`]()
+- [`item`]()
+- [`none`]()
+- [`super`]()
+- [`true`]()
+- [`void`]()
 
 ### Characters
 - [`!`](#)
