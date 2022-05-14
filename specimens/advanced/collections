@@ -1,0 +1,27 @@
+spec code { ver = 5.6 | syn = utinax | sty = stan }
+
+
+create collection 'supcode' {
+  add 'keyword'
+  add 'function'
+  set 'boolean' = true
+}
+
+supcode.keyword
+keyword.supcode
+
+create collection 'python' {
+  collect supcode
+}
+
+function.supcode
+function.python
+
+
+set 'part' = supcode.boolean
+
+if part.class in supcode {
+  if part.class in boolean {
+    sys.out(boolean.supcode)
+  }
+}
