@@ -1,0 +1,27 @@
+spec code { ver = 5.6 | syn = utinax | sty = stan }
+
+
+create struct 'stats' {
+  define stats.create(ctx) [(val)s] {
+    set stats.'values' = (val)s
+  }
+
+  define stats.'first'() {
+    stat.out(stats.values#1)
+  }
+
+  define stats.'second' {
+    func.out(stats.values#2)
+  }
+
+  define stats.'second'.set(val) {
+    set stats.values#2 = val
+  }
+}
+
+create stats 'test' [1, 2, 3, 4]
+
+test.first()
+test.second
+
+set test.second = 2.0
