@@ -14,7 +14,7 @@ create struct 'soup' {
 create soup 'sup'
 sup.test()
 
-define 'testing'() { ... }
+define 'testing'(ctx) { ... }
 testing(sup)
 
 
