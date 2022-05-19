@@ -1,0 +1,13 @@
+spec code { ver = 5.6 | syn = utinax | sty = stan }
+
+
+set 'source' = 1, 2, 3
+
+define func(index('idx')) {
+  func.out(source#idx)
+}
+
+func(2)
+func(-1)
+func(1~2)
+func(1~3~2)
