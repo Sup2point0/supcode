@@ -1,0 +1,43 @@
+\ calculator
+\ supcode Specimen
+
+spec code { ver = 5.6 | syn = utinax | sty = stan }
+
+enable sys
+
+
+prompt.open()
+
+on start loop forever {{
+
+  set 'x' = none
+  loop until x is numc {
+    try {
+      set x = prompt.ask("enter a number").numc
+    evade |
+      prompt.out("invalid number")
+    }
+  }
+
+  set 'act' = none
+  loop until act is sys.op {
+    try {
+      set act = sys.op(prompt.ask("enter an operand"))
+    evade |
+      prompt.out("invalid operand")
+    }
+  }
+
+  set 'y' = none
+  loop until y is numc {
+    try {
+      set y = prompt.ask("enter another number").numc
+    evade |
+      prompt.out("invalid number")
+    }
+  }
+
+  prompt.out("`x` `act` `y` = " act(x, y))
+  prompt.in()
+
+}}
