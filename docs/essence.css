@@ -43,7 +43,7 @@ nav li a {
   transition: 0.12s;
   font-family: 'Montserrat Medium', sans-serif;
   font-size: 20px;
-  color: #ffffff80;
+  color: #ffffffc0;
   text-decoration: none;
   text-align: center;
   position: relative;
@@ -51,7 +51,7 @@ nav li a {
 }
 
 nav li a.active {
-  color: #ffffffc0;
+  color: #ffffffe0;
 }
 
 nav li a:after {
