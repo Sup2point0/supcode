@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Abel', sans-serif !important;
+  font-family: 'Abel', sans-serif;
   color: #fff;
   margin: 0;
   margin-top: 69px;
@@ -39,7 +39,7 @@ nav .right {float: right; padding: 0px 42px}
 nav li a {
   display: inline-block;
   transition: 0.12s;
-  font-family: "Montserrat Medium", sans-serif;
+  font-family: 'Montserrat Medium', sans-serif;
   font-size: 20px;
   color: #ffffff80;
   text-decoration: none;
