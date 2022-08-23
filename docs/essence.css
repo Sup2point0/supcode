@@ -13,10 +13,13 @@ html {
 }
 
 body {
-  font-family: 'Abel', sans-serif;
-  color: #fff;
   margin: 0;
   margin-top: 69px;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  color: #fff;
 }
 
 nav {
