@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&Overpass&Abel');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Overpass');
+@import url('https://fonts.googleapis.com/css2?family=Abel');
 
 html {
   background-color: #00172a;
@@ -7,7 +9,7 @@ html {
 ::selection {
   color: #ffffffff;
   background-color: #ff0090;
-  background-image: url('.assets/cortex.violet.png');
+  background-image: url('.assets/cortex.violet.jpg');
 }
 
 body {
