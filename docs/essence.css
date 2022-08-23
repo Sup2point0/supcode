@@ -23,7 +23,6 @@ p {
 }
 
 nav {
-  background-image: linear-gradient(#000000c0 33%, #00000000 100%);
   position: fixed;
   top: 0;
   width: 100%;
