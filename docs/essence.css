@@ -38,6 +38,10 @@ nav li {
 nav .left {float: left}
 nav .right {float: right; padding: 0px 42px}
 
+nav #sup {
+  color: #ffffffc0;
+}
+
 nav li a {
   display: inline-block;
   transition: 0.12s;
@@ -48,10 +52,6 @@ nav li a {
   text-align: center;
   position: relative;
   padding: 7px 12px;
-}
-
-nav li a.active {
-  color: #ffffffe0;
 }
 
 nav li a:after {
@@ -75,4 +75,8 @@ nav li a:hover {
 nav li a:hover:after {
   transform: scaleX(1);
   transform-origin: center;
+}
+
+nav li a:active {
+  color: #ff0090ff;
 }
