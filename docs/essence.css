@@ -4,7 +4,7 @@
 
 html {
   /* background-color: #00172a; */
-  background-image: url('.assets/cortex.violet.jpg');
+  background-image: url('./.assets/cortex.violet.jpg');
 }
 
 ::selection {
