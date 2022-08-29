@@ -35,12 +35,12 @@ nav li {
   padding: 0px 2px;
 }
 
-nav .left {float: left}
-nav .right {float: right; padding: 0px 42px}
+nav .left { float: left }
+nav .right { float: right; padding: 0px 42px }
 
-#sup {
-  color: #ffffffc0;
-}
+#sup { color: #ffffffc0; }
+#sup:after { transform-origin: left; }
+#sup:hover:after { transform-origin: right; }
 
 nav li a {
   display: inline-block;
