@@ -39,7 +39,7 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
     <td> <a href="https://wikipedia.org/wiki/Type_system#DYNAMIC">dynamic</a> </td>
   </tr>
   <tr>
-    <td> indentation </td>
+    <td> indentacion </td>
     <td> <a href="https://wikipedia.org/wiki/Off-side_rule">significant</a> </td>
   </tr>
   <tr>
@@ -97,12 +97,12 @@ Supcode is a general-purpose text-based programming language created by [Sup#2.0
 </table>
 
 ### Aims and Improvements
-Supcode is designed to be intuitive, concise and readable. It serves as a bridge between the block-based environment of Scratch and proper text-based programming languages, maintaining most of the key concepts and features while transferyzing the structure and syntax into a text-based format, and opening up room for much more powerful and complex programs.
+Supcode is designed to be intuitive, concise and readable. It serves as a bridge between the block-based environment of Scratch and proper text-based programming languages, maintaining most of the key concepts and features while transfering the structure and syntax into a text-based format, and opening up room for much more powerful and complex programs.
 
-Supcode comes with powerful custolyzability and convenient shortcuts. Like Scratch, there is an extensive assortment of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialyzation and applyzations.
+Supcode comes with powerful custolyzability and convenient shortcuts. Like Scratch, there is an extensive assortion of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialyzacion and applyzacions.
 
 ### Files and Applications
-Supcode files use the `.sc` filename extension. Often, this has a number following it to indicate the version number, i.e. `.sc4`, `.sc5`, etc. to allow for identifyzation, version conversion and compatibility indicyzation. Extensions use the `.scx` file extension. There are also a several other file extensions for highly specialyzed uses, such as `.scd` or `.scv`, though these are rarely used.
+Supcode files use the `.sc` filename extension. Often, this has a number following it to indicyze the version number, i.e. `.sc4`, `.sc5`, etc. to allow for identifyzacion, version convertion and compatibility indicyzacion. Extensions use the `.scx` file extension. There are also a several other file extensions for highly specialyzen uses, such as `.scd` or `.scv`, though these are rarely used.
 
 
 <br>
