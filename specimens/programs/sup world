@@ -1,5 +1,5 @@
 \ sup world
-\ supcode specimen
+
 
 spec code {
   | lan = sup | ver = 5.6
