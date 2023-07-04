@@ -25,7 +25,7 @@ create struct 'account' {
         add "account locked", datix.now() to account.log
         evoke ...
       else |
-      add "failed login attempt", datix.now() to account.log
+        add "failed login attempt", datix.now() to account.log
         evoke ...
       }
     }
