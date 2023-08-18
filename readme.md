@@ -1,5 +1,11 @@
 # supcode
 
+```coffee
+prompt.open()
+prompt.out("sup world!")
+```
+
+
 ## Introduction
 
 **Supcode** (stylised *supcode*) is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.6.
@@ -113,4 +119,46 @@ Supcode files use the `.sc` filename extension. Often, this has a number followi
 
 
 ## Specimens
-Various specimens, including aspects and programs, can be found [here](specimens).
+
+```coffee
+\ supcode 5.7
+
+create struct 'SoupMachine' {
+  evolve func self.create(ctx) [
+    | num 'cost'
+    | str 'name' = none
+    | (str)s 'flavours' = ()
+  ] {
+    set self.'cost' = cost
+    set self.'name' = { if name then name else ctx.shard.str }
+    set self.'flavours' = { loop for each in flavours || case(each)[lower]}
+  }
+  
+  define self.purchase() [
+    | source
+    | int 'count' = 1
+    | pool[self.flavours] 'flavour' = none
+  ] {
+    if count < 1 {
+      evoke "Can’t give that many bowls of soup!"
+    }
+    
+    if not flavour {
+      flavour = random(self.flavours)[option]
+    }
+    
+    alt source - self.cost * count
+    func.out("Here’s some `case(flavour)[title]` soup!")
+  }
+}
+
+set 'credits' = 200
+set 'soupy' = SoupMachine() [
+  | cost = 20
+  | flavours = "tomato", "mushroom", "potato"
+]
+
+sys.out(soupy.purchase(credits, 1, "mushroom"))
+```
+
+More specimens can be found [here](specimens).
