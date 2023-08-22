@@ -8,7 +8,7 @@ prompt.out("sup world!")
 
 ## Introduction
 
-**Supcode** (stylised *supcode*) is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.6.
+**Supcode** (stylised *supcode*) is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.7.
 
 <table>
   <tr>
@@ -100,7 +100,7 @@ prompt.out("sup world!")
   </tr>
   <tr>
     <td> latest release </td>
-    <td> 5.6 (May 2022) </td>
+    <td> 5.7 (July 2023) </td>
   </tr>
 </table>
 
