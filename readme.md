@@ -144,11 +144,11 @@ create struct 'SoupMachine' {
     }
     
     if not flavour {
-      flavour = random(self.flavours)[option]
+      set 'flavour' = random(self.flavours)[option]
     }
     
     alt source - self.cost * count
-    func.out("Here’s some `case(flavour)[title]` soup!")
+    func.out("Here’s some flavour` soup!")
   }
 }
 
