@@ -131,7 +131,7 @@ create struct 'SoupMachine' {
   ] {
     set self.'cost' = cost
     set self.'name' = { if name then name else ctx.shard.str }
-    set self.'flavours' = { loop for each in flavours || case(each)[lower]}
+    set self.'flavours' = { loop for each in flavours || case(each)[lower] }
   }
   
   define self.purchase() [
