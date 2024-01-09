@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+html {
+  background-image: url('assets/cortex.violet.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
