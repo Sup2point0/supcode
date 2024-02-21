@@ -99,14 +99,14 @@ prompt.out("sup world!")
   </tr>
   <tr>
     <td> latest release </td>
-    <td> 5.7 (July 2023) </td>
+    <td> 5.7 (July 2023) <br> 6.0 (upcoming) </td>
   </tr>
 </table>
 
 ### Aims and Improvements
 Supcode is designed to be intuitive, readable, and versatile.
 
-As a bridge of sorts between the block-based environment of Scratch and proper text-based programming languages, its structure and syntax are fairly similar. In particular, it follows a logical flow...
+As a bridge of sorts between the block-based environment of Scratch and proper text-based programming languages, its structure and syntax are fairly similar.
 
 Supcode comes with powerful customisability and convenient shortcuts. Like Scratch, there is an extensive assortion of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialisation and applications.
 
@@ -255,3 +255,5 @@ sys.out(soupy.purchase(credits, 1, "mushroom"))
 ```
 
 More specimens can be found in [specimens](specimens).
+
+<!-- sup :v -->
