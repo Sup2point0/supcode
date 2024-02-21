@@ -6,9 +6,12 @@ prompt.out("sup world!")
 ```
 
 
+<br>
+
+
 ## Introduction
 
-**Supcode** (stylised *supcode*) is a general-purpose text-based programming language created by [Sup#2.0](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch](https://scratch.mit.edu), [Python](https://python.org) and [Wikitext](https://mediawiki.org/wiki/Wikitext), and is itself programmed in the Origin 2 base programming language. The current major version is supcode 5.0, with the latest major release being supcode 5.7.
+**Supcode** (stylised *supcode*) is a general-purpose programming language created by [Sup#2.0<sup>↗</sup>](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch<sup>↗</sup>](https://scratch.mit.edu), [Python<sup>↗</sup>](https://python.org) and [Wikitext<sup>↗</sup>](https://mediawiki.org/wiki/Wikitext). The current major version is supcode 5.0, with the latest major release being supcode 5.7. supcode 6.0 is currently in development.
 
 <table>
   <tr>
@@ -32,11 +35,11 @@ prompt.out("sup world!")
   </tr>
   <tr>
     <td> <a href="https://wikipedia.org/wiki/Programming_paradigm">paradigm</a> </td>
-    <td> multi-paradigm – <a href="https://wikipedia.org/wiki/Imperative_programming">imperative</a>, <a href="https://wikipedia.org/wiki/Event-driven_programming">event-driven</a>, <a href="https://wikipedia.org/wiki/Parallel_computing">multi-threaded</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Imperative_programming">imperative</a>, <a href="https://en.m.wikipedia.org/wiki/Object-oriented_programming">object-oriented</a>, <a href="https://wikipedia.org/wiki/Event-driven_programming">event-driven</a> </td>
   </tr>
   <tr>
     <td> purpose </td>
-    <td> <a href="https://wikipedia.org/wiki/General-purpose_programming_language">general-purpose</a> – games, programs, scripts </td>
+    <td> <a href="https://wikipedia.org/wiki/General-purpose_programming_language">general-purpose</a> </td>
   </tr>
   <tr>
     <td> syntax </td>
@@ -48,27 +51,23 @@ prompt.out("sup world!")
   </tr>
   <tr>
     <td> indentation </td>
-    <td> <a href="https://wikipedia.org/wiki/Off-side_rule">significant</a> </td>
+    <td> <a href="https://wikipedia.org/wiki/Off-side_rule">significant</a> (pre-6.0) <br> <a href="https://en.m.wikipedia.org/wiki/Free-form_language">insignificant</a> (post-6.0) </td>
   </tr>
   <tr>
     <td> <a href="https://wikipedia.org/wiki/Operating_system">platform</a> </td>
     <td> any </td>
   </tr>
   <tr>
-    <td> programmed in </td>
-    <td> Origin 2 </td>
-  </tr>
-  <tr>
     <td> based on </td>
     <td> <a href="https://scratch.mit.edu">Scratch</a>, <a href="https://python.org">Python</a> </td>
   </tr>
   <tr>
-    <td> loosely based on </td>
-    <td> <a href="https://mediawiki.org/wiki/Wikitext">Wikitext Markup</a>, <a href="https://swift.org">Swift</a>, HTML </td>
+    <td> inspired by </td>
+    <td> <a href="https://mediawiki.org/wiki/Wikitext">Wikitext Markup</a>, <a href="https://swift.org">Swift</a>, C#, HTML </td>
   </tr>
   <tr>
     <td> <a href="https://wikipedia.org/wiki/Filename_extension">filename extensions</a> </td>
-    <td> <code>.sc</code>, <code>.sc5</code>, <code>.scx</code> </td>
+    <td> <code>.sc</code>, <code>.sc6</code> <code>.sc5</code>, <code>.scx</code> </td>
   </tr>
   <tr>
     <td> other extensions </td>
@@ -120,6 +119,100 @@ Supcode files use the `.sc` filename extension. Often, this has a number followi
 
 ## Specimens
 
+### supcode 6.0
+
+> [!Note]
+> *supcode 6.0* is currently under development.
+
+```coffee
+<sup ver="6" sty="utinax-vis" ind=3>
+\\
+DISCLAIMER –
+This code is only a peek at what supcode can do.
+It is not by any means functional, optimised or perfect.
+Enjoy ^v^
+\\
+
+<sec 'structs'>
+create struct 'profile' {
+   \\
+      Represents a user profile.
+   \\
+
+   evolve action create self(ctx) [
+     | int 'id'
+     | str 'user', 'name'
+     | str, list(str) 'alts' = none
+     | list(str) 'langs' = list()
+     | list(str) 'apts' = list()
+     | (par)s 'pars'
+   ] {
+      \\
+         Creates a new profile.
+      \\
+
+      auto set id, name, alt-name, langs, apts
+
+      set self.'render-keywords' = dict(
+         "id" = "User ID",
+         "name" = "Username",
+         "alts" = "Alternative Usernames",
+         "langs" = "Programming Languages",
+         "apts" = "Aptitudes",
+      )
+
+      loop for key, val in pars {
+         set self.(shard(key)) = val
+      }
+   }
+
+   create func self.render-text() to str {
+      set 'text' = "Profile[" + "\n"
+
+      loop for 'var' in self._vars_ {
+         if var in self.render-keywords {
+            alt text + "`render-keywords # var`: "
+         } else {
+            alt text + str(var) + ": "
+         }
+
+         alt text + { if var is iterable then {
+            str.join(
+               { for each in var out str(each) }
+            ) [sep = ", "]
+         } else str(var) }
+      }
+
+      out text
+   }
+}
+</sec>
+
+<sec "core">
+evolve sys.run(ctx) [(par)s]
+{
+   set 'sup' = profile() [
+      | id = 2.0
+      | name = "Sup#2.0"
+      | alt-name = "Sup2point0"
+      | langs = "supcode", "Scratch", "Python", "C#", "HTML", "CSS", "JavaScript",
+      | apts = (
+         "creating", "designing", "coding", "procrastinating",
+      )
+   ]
+
+   sys.out(sup.render-text())
+   sys.in()
+   sys.quit()
+}
+</sec>
+
+\ how’d you like that?
+</sup>
+```
+
+### supcode 5.7
+
 ```coffee
 \ supcode 5.7
 
@@ -161,4 +254,4 @@ set 'soupy' = SoupMachine() [
 sys.out(soupy.purchase(credits, 1, "mushroom"))
 ```
 
-More specimens can be found [here](specimens).
+More specimens can be found in [specimens](specimens).
