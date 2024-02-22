@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> supcode Render </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p><pre><span class="operator">&lt;</span>sup ver<span class="operator">=</span>"6" sty<span class="operator">=</span>"utinax-vis" ind<span class="operator">=</span>3<span class="operator">&gt;</span>
+
+\\
+
+DISCLAIMER –
+
+This code <span class="logic">is</span> only a peek at what supcode can do.
+
+It <span class="logic">is</span> <span class="logic">not</span> by any means functional, optimised <span class="logic">or</span> perfect.
+
+Enjoy <span class="operator">^</span>v<span class="operator">^</span>
+
+\\
+
+
+
+<span class="operator">&lt;</span>sec 'structs'<span class="operator">&gt;</span>
+
+<span class="action">create</span> <span class="struct">struct</span> 'profile' {
+
+   \\
+
+      Represents a user profile.
+
+   \\
+
+
+
+   <span class="action">evolve</span> <span class="struct">action</span> <span class="action">create</span> self(ctx) [
+
+     | <span class="struct">int</span> 'id'
+
+     | <span class="struct">str</span> 'user', 'name'
+
+     | <span class="struct">str</span>, <span class="struct">list</span>(<span class="struct">str</span>) 'alts' <span class="operator">=</span> none
+
+     | <span class="struct">list</span>(<span class="struct">str</span>) 'langs' <span class="operator">=</span> <span class="struct">list</span>()
+
+     | <span class="struct">list</span>(<span class="struct">str</span>) 'apts' <span class="operator">=</span> <span class="struct">list</span>()
+
+     | (par)s 'pars'
+
+   ] {
+
+      \\
+
+         Creates a new profile.
+
+      \\
+
+
+
+      <span class="keyword">auto</span> <span class="action">set</span> id, name, <span class="action">alt</span>-name, langs, apts
+
+
+
+      <span class="action">set</span> self.'render-keywords' <span class="operator">=</span> <span class="struct">dict</span>(
+
+         "id" <span class="operator">=</span> "User ID",
+
+         "name" <span class="operator">=</span> "Username",
+
+         "alts" <span class="operator">=</span> "Alternative Usernames",
+
+         "langs" <span class="operator">=</span> "Programming Languages",
+
+         "apts" <span class="operator">=</span> "Aptitudes",
+
+      )
+
+
+
+      <span class="action">loop</span> for key, val <span class="logic">in</span> pars {
+
+         <span class="action">set</span> self.(shard(key)) <span class="operator">=</span> val
+
+      }
+
+   }
+
+
+
+   <span class="action">create</span> <span class="struct">func</span> self.render-text() <span class="action">to</span> <span class="struct">str</span> {
+
+      <span class="action">set</span> 'text' <span class="operator">=</span> "Profile[" <span class="operator">+</span> "\n"
+
+
+
+      <span class="action">loop</span> for 'var' <span class="logic">in</span> self._vars_ {
+
+         <span class="keyword">if</span> var <span class="logic">in</span> self.render-keywords {
+
+            <span class="action">alt</span> text <span class="operator">+</span> "`render-keywords <span class="operator">#</span> var`: "
+
+         } <span class="keyword">else</span> {
+
+            <span class="action">alt</span> text <span class="operator">+</span> <span class="struct">str</span>(var) <span class="operator">+</span> ": "
+
+         }
+
+
+
+         <span class="action">alt</span> text <span class="operator">+</span> { <span class="keyword">if</span> var <span class="logic">is</span> iterable then {
+
+            <span class="struct">str</span>.join(
+
+               { for each <span class="logic">in</span> var <span class="action">out</span> <span class="struct">str</span>(each) }
+
+            ) [sep <span class="operator">=</span> ", "]
+
+         } <span class="keyword">else</span> <span class="struct">str</span>(var) }
+
+      }
+
+
+
+      <span class="action">out</span> text
+
+   }
+
+}
+
+<span class="operator">&lt;</span><span class="operator">/</span>sec<span class="operator">&gt;</span>
+
+
+
+<span class="operator">&lt;</span>sec "core"<span class="operator">&gt;</span>
+
+<span class="action">evolve</span> sys.run(ctx) [(par)s]
+
+{
+
+   <span class="action">set</span> 'sup' <span class="operator">=</span> profile() [
+
+      | id <span class="operator">=</span> 2.0
+
+      | name <span class="operator">=</span> "Sup<span class="operator">#</span>2.0"
+
+      | <span class="action">alt</span>-name <span class="operator">=</span> "Sup2point0"
+
+      | langs <span class="operator">=</span> "supcode", "Scratch", "Python", "C<span class="operator">#</span>", "HTML", "CSS", "JavaScript",
+
+      | apts <span class="operator">=</span> (
+
+         "creating", "designing", "coding", "procrastinating",
+
+      )
+
+   ]
+
+
+
+   sys.<span class="action">out</span>(sup.render-text())
+
+   sys.<span class="logic">in</span>()
+
+   sys.quit()
+
+}
+
+<span class="operator">&lt;</span><span class="operator">/</span>sec<span class="operator">&gt;</span>
+
+
+
+\ how’d you like that?
+
+<span class="operator">&lt;</span><span class="operator">/</span>sup<span class="operator">&gt;</span>
+
+</pre></p>
+  </body>
+</html>

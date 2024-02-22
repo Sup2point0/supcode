@@ -1,0 +1,84 @@
+<sup ver="6" sty="utinax-vis" ind=3>
+\\
+DISCLAIMER –
+This code is only a peek at what supcode can do.
+It is not by any means functional, optimised or perfect.
+Enjoy ^v^
+\\
+
+<sec 'structs'>
+create struct 'profile' {
+   \\
+      Represents a user profile.
+   \\
+
+   evolve action create self(ctx) [
+     | int 'id'
+     | str 'user', 'name'
+     | str, list(str) 'alts' = none
+     | list(str) 'langs' = list()
+     | list(str) 'apts' = list()
+     | (par)s 'pars'
+   ] {
+      \\
+         Creates a new profile.
+      \\
+
+      auto set id, name, alt-name, langs, apts
+
+      set self.'render-keywords' = dict(
+         "id" = "User ID",
+         "name" = "Username",
+         "alts" = "Alternative Usernames",
+         "langs" = "Programming Languages",
+         "apts" = "Aptitudes",
+      )
+
+      loop for key, val in pars {
+         set self.(shard(key)) = val
+      }
+   }
+
+   create func self.render-text() to str {
+      set 'text' = "Profile[" + "\n"
+
+      loop for 'var' in self._vars_ {
+         if var in self.render-keywords {
+            alt text + "`render-keywords # var`: "
+         } else {
+            alt text + str(var) + ": "
+         }
+
+         alt text + { if var is iterable then {
+            str.join(
+               { for each in var out str(each) }
+            ) [sep = ", "]
+         } else str(var) }
+      }
+
+      out text
+   }
+}
+</sec>
+
+<sec "core">
+evolve sys.run(ctx) [(par)s]
+{
+   set 'sup' = profile() [
+      | id = 2.0
+      | name = "Sup#2.0"
+      | alt-name = "Sup2point0"
+      | langs = "supcode", "Scratch", "Python", "C#", "HTML", "CSS", "JavaScript",
+      | apts = (
+         "creating", "designing", "coding", "procrastinating",
+      )
+   ]
+
+   sys.out(sup.render-text())
+   sys.in()
+   sys.quit()
+}
+</sec>
+
+\ how’d you like that?
+</sup>

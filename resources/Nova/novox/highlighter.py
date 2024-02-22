@@ -15,46 +15,54 @@ def render(file: str):
   '''Applies syntax highlighting to a .txt file and saves it as a .png file.'''
 
   with open(file) as f:
-    text = highlight(f)
+    text = highlight(f).getvalue()
+    style()
     export(text, "export.html")
 
 
 def highlight(source):
   '''Apply *supcode Nova* syntax highlighting to a source file.'''
 
-  with open("tokens.json") as f:
+  with open("tokens.json", "r") as f:
     tokens = json.load(f)
+  with open("semantics.json", "r") as f:
+    semantics = json.load(f)
 
   new = StringIO()
   context = []
 
   ## contextual styles
   for line in source:
+    line = re.sub("=<", "&le;", line)
+    line = re.sub(">=", "&ge;", line)
+
     for each in re.split("(\W)", line):
 
       # test different tokens
-      for key, vals in tokens.items():
-
-        # pair tokens open a new context
-        if key == "pair":
-          for kind, matches in vals.items():
-            break
-          
-        # lone tokens can be simply replaced
-        else:
-          if each in vals:
-            new.write(f'<span class="{key}">{each}</span>')
-            break
+      for construct, token in tokens.items():
+        if context:
+          continue
+        if each in token:
+          new.write(f'<span class="{construct}">{repl(each)}</span>')
+          break
           
       else:
-        new.write(each)
+        # for construct, token in semantics.items():
+        #   if each in token:
+        #     if context:
+        #       if context[-1] == construct:
+        #         context.pop()
+        #         new.write(f"{repl(each)}</span>")
+        #     else:
+        #       context.append(construct)
+        #       new.write(f'<span class="{construct}">{repl(each)}')
+
+        # else:
+          new.write(each)
     
     new.write("\n")
 
   ## character alterations
-  new = new.getvalue()
-  new = re.sub("=<", "&le;", new)
-  new = re.sub(">=", "&ge;", new)
   ...
   # ligatures
   # dualshift
@@ -65,14 +73,17 @@ def highlight(source):
 def repl(char):
   '''Replace a character.'''
 
-  ...
+  match char:
+    case "<":
+      return "&lt;"
+    case ">":
+      return "&gt;"
+    case _:
+      return char
 
 
 def export(content, file):
   '''Save a .html file as a .png image.'''
-
-  content = re.sub("<", "&lt;", content)
-  content = re.sub(">", "&gt;", content)
 
   with open(file, "w") as f:
     text = f"""<!DOCTYPE html>
@@ -106,11 +117,16 @@ def export(content, file):
 def style():
   with open("tokens.json", "r") as f:
     tokens = json.load(f)
-
   with open("colours.json", "r") as f:
     colours = json.load(f)
-  
-  text = "\n".join(f".{token} \{color: {colours[token]}}" for token in tokens)
+  with open("novox.json", "r") as f:
+    novox = json.load(f)
+
+  text = "\n".join(
+    f""".{token} {{color: {colours[novox["colours"][token]]}}}"""
+    for token in tokens
+  )
+  text += f"\n* {{color: #fff; background-color: {colours['blue-midnight']}}}"
   
   with open("style.css", "w") as f:
     f.write(text)
