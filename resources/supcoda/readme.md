@@ -18,9 +18,18 @@ The new and updated walkthrough to supcode.
     <th> description </th>
   </tr>
   <tr>
-    <td rowspan="3"> Introduction </td>
+    <td rowspan="2"> Introduction </td>
     <td> <a href="foundation/sup-world.md">Sup, World!</a> </td>
     <td> A simple ”Sup, World!” program in supcode. </td>
+  </tr>
+  <tr>
+    <td> <a href="foundation/sup-code.md">Sup, supcode!</a> </td>
+    <td> A general tour of supcode. </td>
+  </tr>
+  <tr>
+    <td rowspan="2"> General </td>
+    <td> <a href="foundation/control-flow.md">Control Flow</a> </td>
+    <td> <code>if</code>, <code>else</code>, <code>openif</code>, <code>loop</code> </td>
   </tr>
   <tr>
     <td> <a href="foundation/functions.md">Functions</a> </td>
@@ -33,5 +42,7 @@ The new and updated walkthrough to supcode.
   </tr>
   <tr>
     <td rowspan="1"> Miscellaneous </td>
+    <td> </td>
+    <td> </td>
   </tr>
 </table>
