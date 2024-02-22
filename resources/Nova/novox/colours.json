@@ -1,0 +1,38 @@
+{
+  "comment": "grey.nova",
+    "comment.single": "grey.nova",
+    "comment.double": "grey.nova",
+    "comment.triple": "grey.nova",
+    "comment.single.bounded": "grey.nova",
+    "comment.double.bounded": "grey.nova",
+    "comment.triple.bounded": "grey.nova",
+  "keyword": "blue.nova",
+  "action": "blue.nova",  // TODO
+  "logic": "orange.solar",
+  "function": "pink.electric",
+  "struct": "lilac.nova",
+    "shard": "#fff",  // TODO
+    "string": "#fff",  // TODO
+    "number": "blue.crescent",
+    "bool": "lilac.crescent",
+    "none": "lilac.crescent",
+  "class": "lilac.nova",  // TODO
+  "object": "#fff",
+    "object.constant": "#fff",  // TODO
+    "object.ephemeral": ["#fff", "italic"],   // TODO
+    "object.argument": "pink.spirit",
+    "object.parameter": "pink.spirit",
+    "object.special": ["lilac.crescent", "italic"],
+  "extension": "teal.electric",
+    "ixtension": "teal.electric",
+  "particle": "#fff",  // TODO
+  "secator": "purple.spirit",
+  "operator": "orange.solar",
+  "dot": "grey.nova",
+  "colon": "orange.spirit",
+  "semicolon": "blue.deep",
+  "pipe": "#fff",
+  "bracket.round": "#fff",
+  "bracket.square": "#fff",
+  "brace": "#fff",
+}
