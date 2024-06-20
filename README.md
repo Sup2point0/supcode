@@ -1,17 +1,57 @@
 # supcode
 
-```coffee
-prompt.open()
-prompt.out("sup world!")
-```
+<!--
+will putting this here
+confuse you
+altho tbh the probability
+that someone finds this
+is astronomically low
+-->
+
+<div align="center">
+
+![supcode title card](assets/supcode-title.png)
+
+A modern, high-level, feature-rich general-purpose programming language.
+
+[site<sup>↗</sup>](https://sup2point0.github.io/supcode) \ [walkthrough](resources/supcoda/) \ [docs](docs/) \ [reddit<sup>↗</sup>](https://reddit.com/r/supcode) \ [Nova](resources/Nova)
+
+</div>
+
+---
+
+![glimpse into supcode](assets/supcode-glimpse.png)
 
 
 <br>
 
 
-## Introduction
+## Features
 
-**Supcode** (stylised *supcode*) is a general-purpose programming language created by [Sup#2.0<sup>↗</sup>](https://github.com/Sup2point0) under 2.0 Studios. It is largely based on [Scratch<sup>↗</sup>](https://scratch.mit.edu), [Python<sup>↗</sup>](https://python.org) and [Wikitext<sup>↗</sup>](https://mediawiki.org/wiki/Wikitext). The current major version is supcode 5.0, with the latest major release being supcode 5.7. supcode 6.0 is currently in development.
+ - Intuitive keyword-focused syntax
+ - Object-oriented and dynamically typed
+ - `kebab-case` in identifiers for maximum readability
+ - Clean and easy modularisation and path resolution
+ - Flexible with configurations and flavours
+ - Versatile with extensions and frameworks
+ - Purely conceptual – you can’t write a single bug if the code doesn’t run!
+
+
+## Explore
+
+> [!TIP]
+> For the best first viewing experience, check out the [supcode site<sup>↗</sup>](https://sup2point0.github.io/supcode)!
+
+Want to see more of supcode? We’ve got a huge array of [specimens](specimens/).
+
+Looking to learn the language? The [*supcoda*](resources/supcoda/) is a full walkthrough.
+
+Instant question? There’s a good chance it’s answered in [FAQ](faq.md).
+
+![another glimpse into supcode](assets/supcode-glimpse-another.png)
+
+
+## Info
 
 <table>
   <tr>
@@ -103,15 +143,31 @@ prompt.out("sup world!")
   </tr>
 </table>
 
-### Aims and Improvements
-Supcode is designed to be intuitive, readable, and versatile.
 
-As a bridge of sorts between the block-based environment of Scratch and proper text-based programming languages, its structure and syntax are fairly similar.
+## Contributing
 
-Supcode comes with powerful customisability and convenient shortcuts. Like Scratch, there is an extensive assortion of [extensions](extensions), both [internal](extensions/ixtensions) and [external](extensions), to allow for limitless specialisation and applications.
+Feedback, thoughts and criticism are absolutely welcome! Just drop something in [issues]() or [discussions]().
 
-### Files and Applications
-Supcode files use the `.sc` filename extension. Often, this has a number following it to indicate the version number (`.sc4`, `.sc5`, etc.). Extensions use the `.scx` file extension. There are also a several other file extensions for specialised cases, such as `.scd` or `.scv`, though these are rarely used.
+
+## Roadmap
+
+ - [ ] site
+ - [ ] *supcoda*
+ - [x] *Learn supcode in Y minutes*
+ - [x] PrismJS syntax highlighter
+
+
+## About
+
+Made with love by Sup#2.0 ([@Sup2Point0]()).
+
+On ? September 2021, I sent a code file written in a hypothetical programming language to my friend, just as a joke. What d’y’know, a joke develops until it becomes reality, and supcode was born. Development subsequently kicked off, with 3 major revisions of the language, before we reached stability with supcode 4.0.
+
+supcode draws upon each and every coding language I’ve worked with – primarily Scratch, Python and Wikitext Markup. Its original intention was to act as a bridge between the block-based syntax of Scratch and text-based syntax of real code, although the language has ~~deteriorated~~ developed too far for this vision to remain accurate. Above all, it aims to be fun, unique and dynamic.
+
+I’ve placed all this work under the MIT license, but in the unlikely case that anyone would like to use any of it, credit would be appreciated.
+
+Enjoy!
 
 
 <br>
@@ -253,7 +309,5 @@ set 'soupy' = SoupMachine() [
 
 sys.out(soupy.purchase(credits, 1, "mushroom"))
 ```
-
-More specimens can be found in [specimens](specimens).
 
 <!-- sup :v -->
