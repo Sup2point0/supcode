@@ -1,0 +1,44 @@
+<doc>
+Activates the builtin `iterable`/`Iterable` abstract struct from which iterable collection-like structs should derive.
+</doc>
+
+<spec[code] {
+   | version = 6.0
+   | flavour = cynax
+   | default-deactive = true
+}>
+
+
+activate "/generic" with Generic
+
+
+active create Struct[
+   | abstract
+   | generics = create Generic('T')[optional, covariant]
+]
+   'Iterable', 'iterable'
+{
+   <doc>
+   A collection of objects that can be iterated over.
+
+   A generic type can be optionally provided to indicate a monotyped collection.
+   </doc>
+
+   create Function[Boolean]
+      self.'for-all'(
+         Parameter 'callback' [
+            Function[in = (Object,) | out = Boolean
+            ]
+         ] = (
+            Object '.obj' => switch Boolean(.obj)
+         )
+      )
+   {
+      <doc>
+      Return `true` if `obj.callback()` returns truthy for every `obj` in the iterable.
+      </>
+   }
+}
+
+
+<//>
