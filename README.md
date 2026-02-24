@@ -11,6 +11,12 @@
 
 ---
 
+<div align="center">
+
+[tour](welcome/whirlwind-tour.md) · [grammar](spec/grammar.md)
+
+</div>
+
 supcode is designed to be unique. It’s weird, it’s wacky, and it’s wonderful. Why do stuff the boring way, when we could instead try out crazy new things?
 
 <table>
