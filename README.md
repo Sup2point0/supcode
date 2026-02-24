@@ -19,6 +19,38 @@
 
 supcode is designed to be unique. It’s weird, it’s wacky, and it’s wonderful. Why do stuff the boring way, when we could instead try out crazy new things?
 
+```
+activate sys
+
+
+create struct 'Portal' [Core]
+{
+   Core 'core'
+   bool 'active'
+
+   evolve create self(Core 'core') [
+     | bool 'active' = FALSE
+   ] {
+      set self.core = core
+      set self.active = active
+   }
+
+   func[Core] self.spin()
+   {
+      out self.core
+   }
+}
+
+on activate
+{
+   set portal = Portal[str]("sup world")[active = TRUE]
+   sys.out(portal.spin())
+}
+```
+
+> [!Tip]
+> Check out more of what supcode can do in [A Whirlwind Tour of supcode](welcome/whirlwind-tour.md)!
+
 <table>
   <tr>
     <th colspan="2"> <h3> supcode 6.9 </h3> </th>
